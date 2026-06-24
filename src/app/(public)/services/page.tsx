@@ -30,7 +30,7 @@ const PROCESS = [
 
 export default async function ServicesPage() {
   const services = await getAllServices();
-  const whatsappUrl = createWhatsAppGeneralUrl(siteSettings.whatsappNumber);
+  const whatsappUrl = createWhatsAppGeneralUrl();
 
   const jsonLd = {
     "@context": "https://schema.org",
