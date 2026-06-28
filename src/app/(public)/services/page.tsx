@@ -52,7 +52,7 @@ export default async function ServicesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ─── HERO ────────────────────────────────────────────────────────────── */}
-      <section className="py-12 md:py-24 bg-brand-dark text-brand-white-pure border-b-4 border-brand-green">
+      <section className="pt-28 pb-12 md:pt-32 md:pb-24 bg-brand-dark text-brand-white-pure border-b-4 border-brand-green">
         <div className="container-inner max-w-5xl mx-auto px-4">
           <div className="flex flex-col items-start gap-4">
             <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-brand-green border border-brand-green/30 px-3 py-1 rounded-full">

@@ -20,7 +20,7 @@ export default async function AboutPage() {
 
   return (
     <main className="flex-1 bg-brand-white">
-      <section className="py-16 md:py-24 border-b border-brand-gray/20 bg-brand-white-pure">
+      <section className="pt-28 pb-16 md:pt-32 md:pb-24 border-b border-brand-gray/20 bg-brand-white-pure">
         <div className="container-inner text-center max-w-4xl mx-auto">
           <TextType
             as="h1"

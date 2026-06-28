@@ -29,7 +29,7 @@ export default async function StorePage() {
   return (
     <main className="flex-1">
       {/* Hero — tight on mobile */}
-      <section className="bg-brand-white py-10 md:py-24 border-b border-brand-gray/20">
+      <section className="bg-brand-white pt-28 pb-10 md:pt-32 md:pb-24 border-b border-brand-gray/20">
         <div className="container-inner text-center max-w-4xl mx-auto px-4">
           <TextType
             as="h1"

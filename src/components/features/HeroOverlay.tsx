@@ -26,7 +26,7 @@ export default function HeroOverlay() {
 
   return (
     <motion.div
-      className="w-full h-full flex flex-col items-center justify-center text-center px-6 py-12"
+      className="w-full h-full flex flex-col items-center justify-center text-center px-6 pt-28 pb-12 md:py-12"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -49,7 +49,7 @@ export default function HeroOverlay() {
       >
         Rex International is{' '}
         <span className="block mt-2 text-brand-dark">
-          Mumbai's backbone for printing <DrawCircleText strokeWidth={4} animationDuration={1.5}>solutions</DrawCircleText>.
+          Mumbai's backbone for printing <DrawCircleText strokeWidth={4} animationDuration={1.5}>solutions</DrawCircleText>
         </span>
       </motion.h1>
 

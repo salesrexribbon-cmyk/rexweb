@@ -21,7 +21,7 @@ export default async function BlogsPage() {
   }));
 
   return (
-    <main className="flex-1 bg-brand-white pt-24 pb-12">
+    <main className="flex-1 bg-brand-white pt-32 pb-12">
       <div className="container-inner max-w-5xl mx-auto px-4">
         
         <div className="mb-12">
