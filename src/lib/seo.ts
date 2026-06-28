@@ -41,6 +41,11 @@ export const defaultMetadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/v1782656902/wur9hcztdgxrocavrgep.png',
+    shortcut: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/v1782656902/wur9hcztdgxrocavrgep.png',
+    apple: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/v1782656902/wur9hcztdgxrocavrgep.png',
+  },
   robots: {
     index: true,
     follow: true,
