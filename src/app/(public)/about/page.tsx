@@ -136,7 +136,7 @@ export default async function AboutPage() {
             />
             <div className="text-brand-gray-light/80 text-lg">
               <ScrollReveal baseOpacity={0} blurStrength={5} enableBlur={true}>
-                Hardware reliability starts at the component level. Over the past 30 years, we have built a robust international supply chain that bypasses standard retail limitations.
+                Hardware reliability starts at the component level. Over the past 45 years, we have built a robust international supply chain that bypasses standard retail limitations.
               </ScrollReveal>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default async function AboutPage() {
               delay={0.6}
               className="text-2xl md:text-4xl font-bold font-outfit text-brand-dark max-w-3xl leading-tight"
             >
-              In a supply chain backed by 30 years of trust.
+              In a supply chain backed by 45 years of trust.
             </BlockTextReveal>
           </div>
         </div>
