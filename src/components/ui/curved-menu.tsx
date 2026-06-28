@@ -41,37 +41,37 @@ const defaultNavItems: iNavItem[] = [
 		heading: "Home",
 		href: "/",
 		subheading: "Welcome to Rex International",
-		imgSrc: "https://images.unsplash.com/photo-1741454570867-4a10f31fc5e3?q=100&w=2832&fm=webp&auto=format&fit=crop",
+		imgSrc: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654150/xjkp0hyunyvw5j1bzvxk.png",
 	},
 	{
 		heading: "Store",
 		href: "/store",
 		subheading: "View our hardware catalog",
-		imgSrc: "https://images.unsplash.com/photo-1755456068400-fbcdce2f795a?q=100&w=2832&fm=webp&auto=format&fit=crop",
+		imgSrc: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654247/xir2i0sot6mbbvp8vghe.jpg",
 	},
 	{
 		heading: "Services",
 		href: "/services",
 		subheading: "Expert maintenance solutions",
-		imgSrc: "https://images.unsplash.com/photo-1755456068249-13d384440902?q=100&w=2832&fm=webp&auto=format&fit=crop",
+		imgSrc: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654200/s81miperhij7z71hc8ph.png",
 	},
 	{
 		heading: "About",
 		href: "/about",
 		subheading: "45+ years of industry excellence",
-		imgSrc: "https://images.unsplash.com/photo-1741454570904-a22d9d6ea511?q=100&w=2832&fm=webp&auto=format&fit=crop",
+		imgSrc: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782653824/zp4nwjwqcpcmhjp5scj2.jpg",
 	},
 	{
 		heading: "Blogs",
 		href: "/blogs",
 		subheading: "Technical insights and news",
-		imgSrc: "https://images.unsplash.com/photo-1741454570904-a22d9d6ea511?q=100&w=2832&fm=webp&auto=format&fit=crop",
+		imgSrc: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782648331/zfevpcqdgzulzq6mupa5.png",
 	},
 	{
 		heading: "Contact",
 		href: "/contact",
 		subheading: "Get in touch with us",
-		imgSrc: "https://images.unsplash.com/photo-1741454570904-a22d9d6ea511?q=100&w=2832&fm=webp&auto=format&fit=crop",
+		imgSrc: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782653425/rq7b0y7wivzkoiywzooy.webp",
 	},
 ];
 
