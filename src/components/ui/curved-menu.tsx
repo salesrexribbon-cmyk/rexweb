@@ -287,8 +287,9 @@ const Header: React.FC<iHeaderProps> = ({
 		<>
 			<div className="relative">
 				{/* I am adding a simple brand name on the left so the website doesn't lose its identity completely */}
-				<Link href="/" className="fixed left-5 top-5 z-40 text-2xl font-bold text-brand-green font-outfit tracking-tight">
-					Rex Inte<span className="text-brand-maroon">.</span>
+				<Link href="/" className="fixed left-5 top-4 z-40 text-xl md:text-2xl font-bold text-brand-green font-outfit tracking-tight leading-none">
+					Rex <br />
+					International<span className="text-brand-maroon">.</span>
 				</Link>
 
 				<div

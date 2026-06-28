@@ -47,9 +47,9 @@ export default function HeroOverlay() {
         variants={itemVariants}
         className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6 font-outfit text-brand-green"
       >
-        Mumbai's Industrial Printer{' '}
+        Rex International has been{' '}
         <span className="block mt-2 text-brand-dark">
-          <DrawCircleText strokeWidth={4} animationDuration={1.5}>Repair</DrawCircleText> &amp; Supply Experts.
+          Mumbai's backbone for printing <DrawCircleText strokeWidth={4} animationDuration={1.5}>solutions</DrawCircleText>.
         </span>
       </motion.h1>
 
