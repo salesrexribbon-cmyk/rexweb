@@ -102,7 +102,7 @@ export const products: Product[] = [
       "Connectivity": "USB 2.0, Wi-Fi",
       "Mobile Printing": "Epson iPrint, Email Print"
     },
-    imageUrl: "https://images.unsplash.com/photo-1598440809249-f5424263158c?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652749/h4uua6utm7ss3xadh3i0.jpg",
     isAvailable: true,
     seo: {
       title: "Epson EcoTank L3250 Ink Tank Printer | Buy in Mumbai",
@@ -244,6 +244,60 @@ export const products: Product[] = [
     seo: {
       title: "HP Printer Laser MFP 1188NW | Buy in Mumbai",
       description: "Buy the HP Printer Laser MFP 1188NW wireless multifunction laser printer in Mumbai. Compact design with print, scan, copy & mobile printing support."
+    }
+  },
+  {
+    id: "prod-9",
+    slug: "canon-pixma-gm4070",
+    name: "Canon PIXMA GM4070",
+    categoryId: "cat-inktank",
+    shortDescription: "High-volume monochrome ink tank printer with auto duplex printing and ADF.",
+    detailedDescription: "The Canon PIXMA GM4070 is a dedicated monochrome ink tank printer engineered for businesses that print in high volumes. With its high page yield ink bottles, it offers incredibly low printing costs. It features automatic double-sided printing and a 35-sheet Auto Document Feeder (ADF) for efficient batch scanning and copying. It also supports seamless wireless connectivity and mobile printing, making it a perfect fit for modern offices seeking reliability and cost-efficiency.",
+    features: ["Print, Scan, Copy", "Auto Duplex Printing", "35-sheet Auto Document Feeder (ADF)", "High Page Yield Ink Bottles", "Wireless & Mobile Printing"],
+    useCases: [
+      {
+        title: "High-Volume Monochrome Printing",
+        description: "Ideal for offices that primarily need black-and-white documents like invoices, reports, and internal memos at a very low cost per page."
+      }
+    ],
+    specifications: {
+      "Functions": "Print, Scan, Copy",
+      "Printer Type": "Monochrome Ink Tank",
+      "Duplex": "Automatic",
+      "Connectivity": "Wi-Fi, Ethernet, USB 2.0"
+    },
+    imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652570/sc5ns3e6jdkd9tjnrgsl.png",
+    isAvailable: true,
+    seo: {
+      title: "Canon PIXMA GM4070 Monochrome Ink Tank Printer | Buy in Mumbai",
+      description: "Buy the Canon PIXMA GM4070 high-volume monochrome ink tank printer in Mumbai. Features auto duplex, ADF, and wireless connectivity."
+    }
+  },
+  {
+    id: "prod-10",
+    slug: "canon-maxify-gx2070",
+    name: "Canon MAXIFY GX2070",
+    categoryId: "cat-inktank",
+    shortDescription: "Compact MegaTank wireless all-in-one printer for small businesses.",
+    detailedDescription: "The Canon MAXIFY GX2070 is a compact yet powerful MegaTank all-in-one business printer. Designed to handle high-volume color printing, it uses pigment-based inks to deliver sharp, water-resistant, and marker-resistant text and vibrant graphics. It offers high-speed printing, a 35-sheet ADF, and seamless wireless connectivity. With its ultra-low running costs, it's the ideal color printing solution for small to medium businesses that demand professional quality without compromise.",
+    features: ["Print, Scan, Copy", "High-Speed Color Printing", "Pigment-Based Inks for Water Resistance", "35-Sheet ADF", "Ultra-Low Running Costs"],
+    useCases: [
+      {
+        title: "Small Business Color Printing",
+        description: "Perfect for producing professional-quality color presentations, flyers, and proposals in-house with exceptional cost efficiency."
+      }
+    ],
+    specifications: {
+      "Functions": "Print, Scan, Copy",
+      "Printer Type": "Color MegaTank",
+      "Ink Type": "Pigment Ink (All colors)",
+      "Connectivity": "Wi-Fi, USB"
+    },
+    imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652672/tpxb0ciry9dkb048pzsl.png",
+    isAvailable: true,
+    seo: {
+      title: "Canon MAXIFY GX2070 MegaTank Printer | Buy in Mumbai",
+      description: "Buy the Canon MAXIFY GX2070 compact MegaTank wireless all-in-one printer in Mumbai. High-volume color printing with pigment inks."
     }
   }
 ];
