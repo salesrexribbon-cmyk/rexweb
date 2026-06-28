@@ -3,8 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { WhatsAppCTA } from '@/components/ui/WhatsAppCTA';
-import { createWhatsAppGeneralUrl } from '@/lib/utils';
 import DrawCircleText from '@/components/ui/DrawCircleText';
 
 export default function HeroOverlay() {
@@ -65,17 +63,17 @@ export default function HeroOverlay() {
       <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto">
         <Link
           href="/store"
-          className="inline-flex items-center justify-center px-10 py-4 text-lg rounded-md font-semibold shadow-sm transition-colors w-full sm:w-auto bg-brand-green text-brand-white-pure hover:bg-brand-green-light"
+          className="inline-flex items-center justify-center px-8 py-4 text-lg rounded-md font-semibold shadow-sm transition-colors w-full sm:w-auto bg-brand-green text-brand-white-pure hover:bg-brand-green-light"
         >
           Explore Hardware Catalog
         </Link>
 
-        <WhatsAppCTA
-          url={createWhatsAppGeneralUrl()}
-          label="Request a Business Quote"
-          variant="secondary"
-          className="w-full sm:w-auto px-10 py-4 text-lg"
-        />
+        <Link
+          href="/services"
+          className="inline-flex items-center justify-center px-8 py-4 text-lg rounded-md font-semibold shadow-sm transition-colors w-full sm:w-auto bg-transparent border-2 border-brand-green text-brand-green hover:bg-brand-green/5"
+        >
+          Explore Technical Services
+        </Link>
       </motion.div>
     </motion.div>
   );
