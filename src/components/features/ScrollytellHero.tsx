@@ -249,13 +249,6 @@ export default function ScrollytellHero({ children }: ScrollytellHeroProps) {
        * The canvas covers this div; the hero overlay sits on top of the canvas.
        */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
-        {/* Brand accent rule */}
-        <div
-          className="absolute top-0 inset-x-0 h-1.5 z-30"
-          style={{
-            background: 'linear-gradient(90deg, #174D38, #4D1717, #174D38)',
-          }}
-        />
 
         {/* Canvas — draws animation frames */}
         <canvas
