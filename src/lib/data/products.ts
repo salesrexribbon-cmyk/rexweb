@@ -181,42 +181,7 @@ export const products: Product[] = [
       description: "Buy the TVS MSP 250 Champion heavy-duty dotmatrix printer in Mumbai. ₹9,000–₹11,000. 450 cps, 40M char ribbon life. Ideal for FMCG distribution, pharma & industrial environments."
     }
   },
-  {
-    id: "prod-6",
-    slug: "brother-hl-l2321d",
-    name: "Brother HL-L2321D",
-    categoryId: "cat-laser",
-    shortDescription: "Single-function auto-duplex laser printer with high speed output.",
-    detailedDescription: "The Brother HL-L2321D is a straightforward, no-compromise single-function laser printer built for high-speed monochrome output with automatic duplex printing as standard. At 30 pages per minute with a 2400 x 600 dpi effective resolution, the HL-L2321D produces sharp, smudge-free text output that is indistinguishable from professional offset printing. Its auto-duplex feature is particularly valuable for organisations wanting to reduce paper consumption without sacrificing print volume. The Brother HL-L2321D is one of the most popular choices for back-office, accounts, and data-entry environments in the Indian SME sector, where the combination of speed, duplex capability, and low total cost of ownership is the primary decision criterion.",
-    features: ["Auto 2-Sided Duplex Print", "30 ppm High-Speed Output", "2400 x 600 dpi Effective Resolution", "250 Sheet Paper Tray", "USB 2.0 High-Speed Interface"],
-    useCases: [
-      {
-        title: "Accounts & Back-Office Operations",
-        description: "Accounts teams producing high volumes of GST invoices, payment receipts, and ledger printouts need speed and consistency above all else. The HL-L2321D's 30 ppm output ensures that even during month-end peaks, the printer never becomes a bottleneck."
-      },
-      {
-        title: "Data Entry & Administration",
-        description: "Administrative teams processing application forms, compliance documents, and multi-page reports benefit from the HL-L2321D's auto-duplex, which automatically produces double-sided documents at no reduction in speed — saving both paper and filing space."
-      },
-      {
-        title: "Single-User Dedicated Printing",
-        description: "For individual department heads or senior staff who require a dedicated, fast, personal printer rather than sharing a network device, the HL-L2321D's compact footprint and USB-direct connection make it an ideal desk-side solution."
-      }
-    ],
-    specifications: {
-      "Functions": "Print Only",
-      "Print Speed": "Up to 30 ppm",
-      "Resolution": "Up to 2400 x 600 dpi",
-      "Duplex": "Automatic",
-      "Interface": "USB 2.0 High Speed"
-    },
-    imageUrl: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000",
-    isAvailable: true,
-    seo: {
-      title: "Brother HL-L2321D Laser Printer | Buy in Mumbai",
-      description: "Buy the Brother HL-L2321D auto-duplex laser printer in Mumbai. ₹10,000–₹12,000. 30 ppm, automatic 2-sided printing. Ideal for accounts departments & back-office operations."
-    }
-  },
+
   {
     id: "prod-7",
     slug: "hp-laserjet-pro-mfp-m126nw-plus",
