@@ -332,5 +332,100 @@ export const products: Product[] = [
       title: "Epson LQ-2090II Dot Matrix Printer | Buy in Mumbai",
       description: "Buy the Epson LQ-2090II wide-format 24-pin dot matrix printer in Mumbai. 550 cps speed, 136 columns, and original + 6 copies for demanding environments."
     }
+  },
+  {
+    id: "prod-12",
+    slug: "epson-plq-30-passbook-printer",
+    name: "Epson PLQ-30 Passbook Printer",
+    categoryId: "cat-dotmatrix",
+    shortDescription: "High-performance 24-pin passbook printer designed for the banking and financial sector.",
+    detailedDescription: "The Epson PLQ-30 series passbook printer is the undisputed industry standard for banks, post offices, and financial institutions. It handles passbooks up to 2.6mm thick with a rapid print speed of up to 624 characters per second, dramatically reducing customer queue times. Its advanced auto-platen gap adjustment ensures perfect print quality regardless of the document's thickness. With an incredibly high Mean Time Between Failures (MTBF) of 30,000 power-on hours, it delivers unmatched reliability in critical, high-volume transactional environments.",
+    features: ["Specialized for Passbook Printing", "Ultra-fast print speed up to 624 cps", "Auto-Platen Gap Adjustment", "Handles media up to 2.6mm thick", "Exceptional MTBF of 30,000 POH"],
+    useCases: [
+      {
+        title: "Banking & Financial Services",
+        description: "The primary choice for printing customer passbooks, fixed deposit receipts, and financial ledgers at teller counters."
+      },
+      {
+        title: "Government & Post Offices",
+        description: "Highly reliable for printing postal savings passbooks and official government certificates on thick media."
+      }
+    ],
+    specifications: {
+      "Print Method": "Impact dot matrix (24-pin)",
+      "Print Speed": "Up to 624 cps (12 cpi)",
+      "Media Thickness": "Up to 2.6mm",
+      "Copy Capability": "1 Original + 6 Copies",
+      "MTBF": "30,000 POH"
+    },
+    imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654150/xjkp0hyunyvw5j1bzvxk.png",
+    isAvailable: true,
+    seo: {
+      title: "Epson PLQ-30 Passbook Printer | Buy in Mumbai",
+      description: "Buy the Epson PLQ-30 24-pin passbook printer in Mumbai. Industry standard for banks with 624 cps speed and auto-platen gap adjustment."
+    }
+  },
+  {
+    id: "prod-13",
+    slug: "hp-smart-tank-580",
+    name: "HP Smart Tank 580 All-in-One",
+    categoryId: "cat-inktank",
+    shortDescription: "Wireless high-capacity color ink tank printer with seamless mobile connectivity.",
+    detailedDescription: "The HP Smart Tank 580 is a feature-packed all-in-one printer offering incredible value for high-volume color printing. It features a transparent, spill-free refill system and includes enough ink in the box to print up to 12,000 black pages or 6,000 color pages. With self-healing dual-band Wi-Fi and the best-in-class HP Smart App, you can easily print, scan, and copy from your smartphone. It produces dark, crisp text and vibrant color graphics, making it perfect for small businesses and dynamic home offices.",
+    features: ["Print, Scan, Copy", "High-capacity spill-free ink tanks", "Self-healing Dual-Band Wi-Fi", "Bluetooth Low Energy (BLE)", "Borderless color printing"],
+    useCases: [
+      {
+        title: "Small Business & Home Office",
+        description: "Produces professional color brochures, flyers, and everyday documents at a fraction of the cost of cartridge printers."
+      },
+      {
+        title: "Education & Student Projects",
+        description: "Ideal for printing high-volume, full-color school assignments and projects without worrying about ink costs."
+      }
+    ],
+    specifications: {
+      "Functions": "Print, Scan, Copy",
+      "Connectivity": "Hi-Speed USB 2.0, Wi-Fi, Bluetooth LE",
+      "Mobile Printing": "HP Smart App, Apple AirPrint, Mopria",
+      "Print Quality": "Up to 4800 x 1200 optimized dpi color"
+    },
+    imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654200/s81miperhij7z71hc8ph.png",
+    isAvailable: true,
+    seo: {
+      title: "HP Smart Tank 580 All-in-One Printer | Buy in Mumbai",
+      description: "Buy the HP Smart Tank 580 wireless color ink tank printer in Mumbai. High capacity, dual-band Wi-Fi, and ultra-low cost printing."
+    }
+  },
+  {
+    id: "prod-14",
+    slug: "canon-lbp2900b",
+    name: "Canon imageCLASS LBP2900B",
+    categoryId: "cat-laser",
+    shortDescription: "Ultra-reliable, robust single-function monochrome laser printer.",
+    detailedDescription: "The Canon imageCLASS LBP2900B is a legendary single-function monochrome laser printer, known across India for its unbreakable reliability and compact size. Designed for small offices and individual users, it delivers crisp, professional-quality documents at a speed of 12 pages per minute with a sharp 2400 x 600 dpi equivalent resolution. Thanks to Canon's Advanced Printing Technology (CAPT) and High-SCoA (Smart Compression Architecture), it requires virtually zero warm-up time from standby mode. It remains the top choice for tough, no-nonsense daily printing.",
+    features: ["Single-function monochrome laser", "Virtually zero warm-up time", "Jam-free robust paper handling", "Compact footprint", "Low-cost Canon 303 Toner Cartridge"],
+    useCases: [
+      {
+        title: "Individual Workstations & Clinics",
+        description: "Perfect for doctor's clinics, retail counters, and individual desks where a dedicated, highly dependable monochrome printer is needed."
+      },
+      {
+        title: "Small Office Daily Printing",
+        description: "Consistently delivers sharp text for daily invoices, prescriptions, and legal documents without the need for constant maintenance."
+      }
+    ],
+    specifications: {
+      "Functions": "Print Only",
+      "Print Speed": "12 ppm (A4)",
+      "Resolution": "2400 x 600 dpi equivalent",
+      "Warm-up Time": "0 seconds from Standby",
+      "Connectivity": "USB 2.0 High Speed"
+    },
+    imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654247/xir2i0sot6mbbvp8vghe.jpg",
+    isAvailable: true,
+    seo: {
+      title: "Canon imageCLASS LBP2900B Laser Printer | Buy in Mumbai",
+      description: "Buy the Canon LBP2900B single-function laser printer in Mumbai. Legendary reliability, fast print speeds, and zero warm-up time."
+    }
   }
 ];
