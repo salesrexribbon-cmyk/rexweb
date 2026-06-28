@@ -7,9 +7,9 @@ export const services: Service[] = [
     name: "Dotmatrix Printhead Repair",
     categoryId: "scat-repair",
     shortDescription: "Component-level repair for all major dotmatrix printheads with genuine parts.",
-    detailedDescription: "When a dotmatrix printhead starts dropping pins or printing with gaps, most vendors will just tell you to buy a new one. That's usually terrible advice. These printheads are built like tanks, and in 90% of cases, we can repair them down to the component level for a fraction of the replacement cost. We literally open up the printhead, diagnose the exact burnt pin coil or worn wire, and replace it using genuine OEM parts sourced directly from Japan and Taiwan. We don't guess—we test. Every head we rebuild goes through a brutal 100-page continuous print test before we even think about handing it back to you. We've been doing this for decades, which is why we confidently back our repairs with a solid 3-month warranty.",
+    detailedDescription: "When a dotmatrix printhead starts dropping pins or printing with gaps, most vendors will just tell you to buy a new one. That's usually terrible advice. These printheads are built like tanks, and in 90% of cases, we can repair them down to the component level for a fraction of the replacement cost. We literally open up the printhead, diagnose the exact burnt pin coil or worn wire, and replace it using genuine OEM parts sourced directly from Japan and Taiwan. We don't guess—we test. Every head we rebuild goes through a brutal 100-page continuous print test before we even think about handing it back to you. We've been doing this for decades, which is why we confidently back our repairs.",
     startingPrice: "₹800",
-    features: ["Genuine OEM parts", "24hr turnaround", "3-month warranty", "On-site available", "10-page burn-in test", "All 9-pin and 24-pin models"],
+    features: ["Genuine OEM parts", "24hr turnaround", "On-site available", "10-page burn-in test", "All 9-pin and 24-pin models"],
     supportedBrands: ["Epson LQ Series", "TVS MSP Series", "Olivetti PR Series", "Star NX Series", "Citizen iDP Series", "Wipro Series"],
     faqs: [
       {
@@ -31,7 +31,7 @@ export const services: Service[] = [
     ],
     seo: {
       title: "Dotmatrix Printhead Repair Service",
-      description: "Expert component-level dotmatrix printhead repair in Mumbai. 24hr turnaround, genuine OEM parts, 3-month warranty. Covers Epson LQ, TVS MSP & all major brands."
+      description: "Expert component-level dotmatrix printhead repair in Mumbai. 24hr turnaround, genuine OEM parts. Covers Epson LQ, TVS MSP & all major brands."
     }
   },
   {
@@ -42,7 +42,7 @@ export const services: Service[] = [
     shortDescription: "Full interior cleaning, fuser check, roller replacement, and print quality testing.",
     detailedDescription: "People buy a laser printer, plug it in, and ignore it until it starts printing with thick black streaks or making grinding noises. If you wait that long, you're going to pay for an expensive fuser or drum replacement. Laser printers generate immense heat and static, which sucks in paper dust. That dust mixes with stray toner to form an abrasive paste that grinds down your gears. Our annual servicing strips the machine down. We vacuum the interior, clean the corona wires, deglaze the pickup rollers, and inspect the fuser pressure rollers. We service every major brand across Mumbai. It's basic preventive maintenance—you spend a little on servicing to avoid spending a fortune on parts.",
     startingPrice: "₹900",
-    features: ["Interior cleaning", "Fuser inspection & cleaning", "Roller check & replacement", "Corona wire service", "Test print certification", "Formal service report"],
+    features: ["Interior cleaning", "Fuser inspection & cleaning", "Roller check & replacement", "Test print certification", "Formal service report"],
     supportedBrands: ["HP LaserJet Series", "Canon imageCLASS Series", "Xerox WorkCentre", "Ricoh SP Series", "Samsung Xpress"],
     faqs: [
       {
@@ -71,7 +71,7 @@ export const services: Service[] = [
     shortDescription: "Annual contracts for worry-free printer uptime across your entire office fleet.",
     detailedDescription: "I talk to finance managers all the time who think skipping an AMC saves money. Then an invoicing printer goes down on the last day of the month, dispatch halts, and suddenly they're panic-calling technicians who overcharge for emergency visits. Our Corporate AMC is designed to stop breakdowns before they happen. You pay a predictable annual fee, and we take complete ownership of your printer fleet. We do regular preventive maintenance visits so machines don't fail when you need them most. If something does break, we guarantee a technician at your desk within 4 hours. We offer both Comprehensive (parts included) and Non-Comprehensive (labour only) plans, covering everything from 5 desktop inkjets to 500-machine enterprise networks.",
     startingPrice: "₹2,500/year",
-    features: ["Comprehensive & non-comprehensive options", "Monthly preventive visits", "4-hour breakdown SLA", "All printer types covered", "Detailed maintenance records", "Priority technician access"],
+    features: ["Comprehensive & non-comprehensive options", "Monthly preventive visits", "5-hour breakdown SLA", "All printer types covered", "Detailed maintenance records", "Priority technician access"],
     supportedBrands: ["All Epson Models", "HP LaserJet & DeskJet", "Canon imageRUNNER & imageCLASS", "Brother HL & MFC", "TVS & Wipro Dotmatrix", "Ricoh & Xerox"],
     faqs: [
       {
@@ -80,7 +80,7 @@ export const services: Service[] = [
       },
       {
         question: "What is your guaranteed response time for AMC breakdown calls?",
-        answer: "All Corporate AMC clients are guaranteed a 4-hour technician response SLA for any printer breakdown. For critical infrastructure, we can negotiate a 2-hour SLA for an additional premium."
+        answer: "All Corporate AMC clients are guaranteed a 5-hour technician response SLA for any printer breakdown. For critical infrastructure, we can negotiate a 2-hour SLA for an additional premium."
       },
       {
         question: "Can you cover both dotmatrix and laser printers under a single AMC?",
@@ -93,7 +93,7 @@ export const services: Service[] = [
     ],
     seo: {
       title: "Corporate Printer AMC in Mumbai",
-      description: "Printer Annual Maintenance Contracts for Mumbai businesses. Comprehensive & non-comprehensive options. 4-hour SLA, all brands covered. Fleets from 3 to 500+ printers."
+      description: "Printer Annual Maintenance Contracts for Mumbai businesses. Comprehensive & non-comprehensive options. 5-hour SLA, all brands covered. Fleets from 3 to 500+ printers."
     }
   },
   {
@@ -133,7 +133,7 @@ export const services: Service[] = [
     shortDescription: "Same-day technician dispatch across Mumbai for critical printer breakdowns.",
     detailedDescription: "Mumbai traffic is a nightmare. You don't want to strap a 25-kilogram office printer to a scooter and drag it to a repair shop while your staff can't print invoices. That's why we built our on-site emergency repair service. When you call us, we ask for a quick video of the error on WhatsApp. This lets us diagnose the issue remotely so our technician arrives carrying the exact parts needed to fix it on the spot. Most common faults—like snapped belts, worn fuser rollers, or jammed sensors—are fixed right at your desk in under an hour. Best of all, we run a strict no-fix, no-fee policy. If we can't solve the problem, you don't pay for the visit.",
     startingPrice: "₹1,000 + parts",
-    features: ["4-hour dispatch SLA", "Mumbai-wide coverage", "Parts carried on-site", "No fix, no fee guarantee", "All printer types", "Same-day resolution in most cases"],
+    features: ["5-hour dispatch SLA", "Mumbai-wide coverage", "Parts carried on-site", "No fix, no fee guarantee", "All printer types", "Same-day resolution in most cases"],
     supportedBrands: ["Epson All Models", "HP All Models", "Canon All Models", "Brother All Models", "TVS & Wipro Dotmatrix", "Ricoh, Xerox & Kyocera"],
     faqs: [
       {
@@ -151,7 +151,7 @@ export const services: Service[] = [
     ],
     seo: {
       title: "On-Site Emergency Printer Repair Mumbai",
-      description: "Same-day on-site printer repair across Mumbai. 4-hour dispatch SLA, no fix no fee guarantee. Covers Mulund, Thane, South Mumbai, Western & Eastern suburbs."
+      description: "Same-day on-site printer repair across Mumbai. 5-hour dispatch SLA, no fix no fee guarantee. Covers Mulund, Thane, South Mumbai, Western & Eastern suburbs."
     }
   }
 ];

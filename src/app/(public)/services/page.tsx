@@ -196,7 +196,7 @@ export default async function ServicesPage() {
             </div>
             <div className="grid grid-cols-1 gap-3">
               {[
-                { title: "Guaranteed Response Times", desc: "SLA-backed 4-hour response for critical breakdowns, anywhere in Mumbai." },
+                { title: "Guaranteed Response Times", desc: "SLA-backed 5-hour response for critical breakdowns, anywhere in Mumbai." },
                 { title: "Free Preventative Maintenance", desc: "Scheduled monthly or quarterly visits to catch issues before they become failures." },
                 { title: "Priority OEM Parts Access", desc: "AMC clients get first access to rare and imported OEM components." },
                 { title: "Standby Machine Provision", desc: "We loan a working unit during major repairs so your operations never stop." },
