@@ -214,5 +214,36 @@ export const products: Product[] = [
       title: "HP LaserJet Pro MFP M126nw plus | Buy in Mumbai",
       description: "Buy the HP LaserJet Pro MFP M126nw plus wireless multifunction laser printer in Mumbai. Print, scan, copy with Wi-Fi & Ethernet connectivity."
     }
+  },
+  {
+    id: "prod-8",
+    slug: "hp-laser-mfp-1188nw",
+    name: "HP Printer Laser MFP 1188NW",
+    categoryId: "cat-laser",
+    shortDescription: "Wi-Fi enabled multifunction laser printer with Print, Scan, and Copy capabilities.",
+    detailedDescription: "The HP Printer Laser MFP 1188NW is designed to deliver fast and efficient performance in a compact, space-saving design. With seamless wireless networking and full mobile printing support, this multifunction printer makes it incredibly easy to print, scan, and copy from virtually anywhere in your workspace. Built for reliability, it provides high-quality monochrome prints ideal for small businesses and home offices seeking professional-grade output.",
+    features: ["Print, Scan, Copy", "Wi-Fi Enabled & Wireless Networking", "Mobile Printing Support", "Fast & Efficient Performance", "Compact & Space Saving Design"],
+    useCases: [
+      {
+        title: "Small Business & Home Office",
+        description: "Perfect for compact workspaces requiring reliable, high-quality printing, scanning, and copying without the clutter of excessive cables."
+      },
+      {
+        title: "Wireless Workflows",
+        description: "Ideal for teams that rely on mobile devices and laptops, allowing seamless document management through robust wireless networking."
+      }
+    ],
+    specifications: {
+      "Functions": "Print, Scan, Copy",
+      "Networking": "Wireless Networking",
+      "Mobile Printing": "Supported",
+      "Design": "Compact & Space Saving"
+    },
+    imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782648331/zfevpcqdgzulzq6mupa5.png",
+    isAvailable: true,
+    seo: {
+      title: "HP Printer Laser MFP 1188NW | Buy in Mumbai",
+      description: "Buy the HP Printer Laser MFP 1188NW wireless multifunction laser printer in Mumbai. Compact design with print, scan, copy & mobile printing support."
+    }
   }
 ];
