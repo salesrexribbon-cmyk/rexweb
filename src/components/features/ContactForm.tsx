@@ -15,8 +15,11 @@ export function ContactForm() {
     const formData = new FormData(e.currentTarget);
     const data = {
       name: formData.get('name') as string,
+      company: formData.get('company') as string,
       email: formData.get('email') as string,
       phone: formData.get('phone') as string,
+      city: formData.get('city') as string,
+      state: formData.get('state') as string,
       message: formData.get('message') as string,
       botField: formData.get('botField') as string,
     };
@@ -47,7 +50,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 card-base p-8 md:p-10 relative">
+    <form onSubmit={handleSubmit} className="space-y-6 relative">
       {status === 'error' && (
         <div className="bg-brand-maroon/10 text-brand-maroon border border-brand-maroon/20 p-4 rounded-md text-sm font-medium mb-4">
           {errorMessage}
@@ -63,6 +66,10 @@ export function ContactForm() {
         <label htmlFor="name" className="label-base">Full Name</label>
         <input type="text" name="name" id="name" required className="input-base" placeholder="John Doe" minLength={2} maxLength={100} />
       </div>
+      <div>
+        <label htmlFor="company" className="label-base">Company Name (Optional)</label>
+        <input type="text" name="company" id="company" className="input-base" placeholder="Acme Logistics Ltd." maxLength={100} />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="email" className="label-base">Email Address</label>
@@ -71,6 +78,16 @@ export function ContactForm() {
         <div>
           <label htmlFor="phone" className="label-base">Phone Number</label>
           <input type="tel" name="phone" id="phone" required className="input-base" placeholder="+91 98765 43210" pattern="[0-9+\-\s]+" />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label htmlFor="city" className="label-base">City</label>
+          <input type="text" name="city" id="city" required className="input-base" placeholder="Mumbai" maxLength={50} />
+        </div>
+        <div>
+          <label htmlFor="state" className="label-base">State</label>
+          <input type="text" name="state" id="state" required className="input-base" placeholder="Maharashtra" maxLength={50} />
         </div>
       </div>
       <div>

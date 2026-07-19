@@ -68,16 +68,16 @@
     @apply hover:shadow-card-hover hover:-translate-y-1;
   }
   .btn-base {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98];
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed bg-brand-green text-brand-white-pure hover:bg-brand-green-light focus:ring-brand-green shadow-sm hover:shadow;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98] bg-brand-green text-brand-white-pure hover:bg-brand-green-light focus:ring-brand-green shadow-sm hover:shadow;
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed bg-brand-white-pure text-brand-green border border-brand-green/30 hover:border-brand-green hover:bg-brand-green/5 focus:ring-brand-green;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98] bg-brand-white-pure text-brand-green border border-brand-green/30 hover:border-brand-green hover:bg-brand-green/5 focus:ring-brand-green;
   }
   .btn-accent {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed bg-brand-maroon text-brand-white-pure hover:bg-brand-maroon-light focus:ring-brand-maroon shadow-sm hover:shadow;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-button)] font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98] bg-brand-maroon text-brand-white-pure hover:bg-brand-maroon-light focus:ring-brand-maroon shadow-sm hover:shadow;
   }
   .input-base {
     @apply w-full border border-brand-gray/50 bg-brand-white-pure rounded-[var(--radius-button)] px-4 py-3 text-brand-dark transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green;

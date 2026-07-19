@@ -50,6 +50,9 @@ export async function submitContactForm(data: ContactFormData) {
       name: validatedData.name,
       email: validatedData.email,
       phone: validatedData.phone,
+      company: validatedData.company,
+      city: validatedData.city,
+      state: validatedData.state,
       message: sanitizedMessage,
     });
     

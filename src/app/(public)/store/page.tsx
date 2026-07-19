@@ -28,21 +28,24 @@ export default async function StorePage() {
 
   return (
     <main className="flex-1">
-      {/* Hero, tight on mobile */}
-      <section className="bg-brand-white pt-28 pb-10 md:pt-32 md:pb-24 border-b border-brand-gray/20">
-        <div className="container-inner text-center max-w-4xl mx-auto px-4">
-          <TextType
-            as="h1"
-            className="heading-section text-3xl md:text-5xl"
-            text="Hardware & Parts Catalog"
-            typingSpeed={50}
-            startOnVisible={true}
-            loop={false}
-          />
-          <div className="text-sm md:text-xl text-brand-dark-muted mt-3">
-            <ScrollReveal baseOpacity={0} blurStrength={10} enableBlur={true}>
-              Curated inventory of industrial dotmatrix machines, laser units, and ink tank systems.
-            </ScrollReveal>
+      <section className="bg-brand-white pt-24 pb-12 md:pt-32 md:pb-24 border-b border-brand-gray/20">
+        <div className="container-inner max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-8 items-end">
+          <div className="md:col-span-8 lg:col-span-9">
+            <TextType
+              as="h1"
+              className="text-5xl sm:text-6xl lg:text-[6rem] font-bold text-brand-dark leading-[0.9] tracking-[-0.04em] font-outfit mb-6"
+              text="Hardware Catalog"
+              typingSpeed={40}
+              startOnVisible={true}
+              loop={false}
+            />
+          </div>
+          <div className="md:col-span-4 lg:col-span-3 pb-2">
+            <div className="text-base md:text-lg text-brand-dark-muted border-l border-brand-green pl-6 py-2">
+              <ScrollReveal baseOpacity={0} blurStrength={10} enableBlur={true}>
+                Curated inventory of industrial dotmatrix machines, laser units, and ink tank systems.
+              </ScrollReveal>
+            </div>
           </div>
         </div>
       </section>
@@ -70,34 +73,51 @@ export default async function StorePage() {
         </div>
       </section>
 
-      {/* Enterprise section, compact on mobile */}
-      <section className="py-12 md:py-24 bg-brand-dark text-brand-white-pure">
-        <div className="container-inner max-w-5xl mx-auto px-4 text-center">
-          <TextType
-            as="h2"
-            className="text-2xl md:text-5xl font-outfit font-light mb-4 md:mb-8 text-brand-white-pure"
-            text="Enterprise Procurement"
-            typingSpeed={50}
-            startOnVisible={true}
-            loop={false}
-          />
-          <div className="text-sm md:text-xl text-brand-gray-light/80 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed">
-            <ScrollReveal baseOpacity={0} blurStrength={5} enableBlur={true}>
-              We streamline hardware supply chains for large organizations, from 50 unit warehouse deployments to hard to find legacy logic boards.
-            </ScrollReveal>
+      <section className="py-16 md:py-32 bg-brand-dark text-brand-white-pure">
+        <div className="container-inner max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-12 gap-12 mb-16 md:mb-24">
+            <div className="md:col-span-6 lg:col-span-8">
+              <TextType
+                as="h2"
+                className="text-4xl md:text-6xl font-outfit font-bold tracking-tighter leading-none text-brand-white-pure"
+                text="Enterprise Procurement"
+                typingSpeed={40}
+                startOnVisible={true}
+                loop={false}
+              />
+            </div>
+            <div className="md:col-span-6 lg:col-span-4 flex items-end">
+              <div className="text-base md:text-lg text-brand-gray-light/70 leading-relaxed">
+                <ScrollReveal baseOpacity={0} blurStrength={5} enableBlur={true}>
+                  We streamline hardware supply chains for large organizations, from 50 unit warehouse deployments to hard to find legacy logic boards.
+                </ScrollReveal>
+              </div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-left">
-            <div className="p-5 md:p-8 border border-brand-white-pure/10 rounded-2xl bg-brand-white-pure/5">
-              <h3 className="text-base md:text-xl font-bold font-outfit mb-2 md:mb-3 text-brand-green">Volume Sourcing</h3>
-              <p className="text-sm text-brand-gray-light/60">Direct OEM partnerships for high volume orders with aggressive pricing.</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-1 bg-brand-white-pure/10 p-[1px]">
+            <div className="md:col-span-7 bg-brand-dark p-8 md:p-16 flex flex-col justify-end min-h-[350px] relative overflow-hidden group">
+              <div className="absolute inset-0 bg-brand-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="relative z-10">
+                <h3 className="text-3xl md:text-4xl font-bold font-outfit mb-4 text-brand-green tracking-tight">Volume Sourcing</h3>
+                <p className="text-lg md:text-xl text-brand-gray-light/60 max-w-lg leading-relaxed">Direct OEM partnerships for high volume orders with aggressive pricing, cutting out intermediaries to maximize your IT budget.</p>
+              </div>
             </div>
-            <div className="p-5 md:p-8 border border-brand-white-pure/10 rounded-2xl bg-brand-white-pure/5">
-              <h3 className="text-base md:text-xl font-bold font-outfit mb-2 md:mb-3 text-brand-green">Legacy Parts</h3>
-              <p className="text-sm text-brand-gray-light/60">Extensive network to source out of production components for older infrastructure.</p>
-            </div>
-            <div className="p-5 md:p-8 border border-brand-white-pure/10 rounded-2xl bg-brand-white-pure/5">
-              <h3 className="text-base md:text-xl font-bold font-outfit mb-2 md:mb-3 text-brand-green">Local Delivery</h3>
-              <p className="text-sm text-brand-gray-light/60">Secure transit for fragile printing machinery across the Mumbai metropolitan area.</p>
+            <div className="md:col-span-5 flex flex-col gap-1">
+              <div className="bg-brand-dark p-8 md:p-10 flex-1 flex flex-col justify-center relative overflow-hidden group">
+                <div className="absolute inset-0 bg-brand-white-pure/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold font-outfit mb-3 text-brand-white-pure tracking-tight">Legacy Parts</h3>
+                  <p className="text-brand-gray-light/60 leading-relaxed">Extensive network to source out of production components for older infrastructure.</p>
+                </div>
+              </div>
+              <div className="bg-brand-dark p-8 md:p-10 flex-1 flex flex-col justify-center relative overflow-hidden group">
+                <div className="absolute inset-0 bg-brand-white-pure/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold font-outfit mb-3 text-brand-white-pure tracking-tight">Local Delivery</h3>
+                  <p className="text-brand-gray-light/60 leading-relaxed">Secure transit for fragile printing machinery across the Mumbai metropolitan area.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
