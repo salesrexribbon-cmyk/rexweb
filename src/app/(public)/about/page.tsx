@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   return {
     title: `Corporate Profile | ${settings.name} Mumbai`,
-    description: `${settings.name} — Mumbai's trusted wholesale printer supplier and corporate printer AMC provider since 1980. 45+ years of industry excellence in dotmatrix, laser & ink tank systems.`,
+    description: `${settings.name}, Mumbai's trusted wholesale printer supplier and corporate printer AMC provider since 1980. 45+ years of industry excellence in dotmatrix, laser & ink tank systems.`,
     alternates: { canonical: '/about' }
   };
 }
@@ -145,7 +145,7 @@ export default async function AboutPage() {
               items={[
                 {
                   title: "Direct OEM Access",
-                  content: "Sourcing directly from original equipment manufacturers in Taiwan, Japan, and mainland China to ensure 100% authentic logic boards, fusers, and printheads.",
+                  content: "Sourcing directly from original equipment importers in Taiwan, Japan, and mainland China to ensure 100% authentic logic boards, fusers, and printheads.",
                   imgSrc: "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80&w=200"
                 },
                 {

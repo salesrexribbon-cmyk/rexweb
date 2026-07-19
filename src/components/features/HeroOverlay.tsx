@@ -11,68 +11,66 @@ export default function HeroOverlay() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
+        staggerChildren: 0.1,
         delayChildren: 0.1,
       }
     }
   };
 
   const itemVariants: import('framer-motion').Variants = {
-    hidden: { opacity: 0, y: 30, scale: 0.98 },
-    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
   };
 
   return (
     <motion.div
-      className="w-full h-full flex flex-col items-center justify-center text-center px-6 pt-28 pb-12 md:py-12"
+      className="w-full h-full flex flex-col items-center justify-center text-center px-6 md:px-12 lg:px-24 pt-24 pb-12 max-w-4xl mx-auto"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
-      <motion.div
+      {/* Anti-Slop: Plain text eyebrow */}
+      <motion.p
         variants={itemVariants}
-        className="inline-block px-5 py-1.5 rounded-full font-bold text-xs mb-8 tracking-wider uppercase border shadow-sm"
-        style={{
-          background: 'rgba(23,77,56,0.1)',
-          color: '#174D38',
-          borderColor: 'rgba(23,77,56,0.2)',
-        }}
+        className="text-[11px] uppercase tracking-[0.2em] font-bold text-brand-green mb-6"
       >
-        45+ Years of Industry Excellence
-      </motion.div>
+        Rex International
+      </motion.p>
 
+      {/* Hand-drawn circle restored, tighter typography */}
       <motion.h1
         variants={itemVariants}
-        className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6 font-outfit text-brand-green"
+        className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.05] mb-6 font-outfit text-brand-green"
       >
-        Rex International is{' '}
-        <span className="block mt-2 text-brand-dark">
-          Mumbai's backbone for printing <DrawCircleText strokeWidth={4} animationDuration={1.5}>solutions</DrawCircleText>
+        The backbone for <br className="hidden sm:block" />
+        <span className="text-brand-dark">
+          enterprise <DrawCircleText strokeWidth={4} animationDuration={1.5}>printing.</DrawCircleText>
         </span>
       </motion.h1>
 
+      {/* Concise Subtext */}
       <motion.p
         variants={itemVariants}
-        className="text-lg md:text-xl mb-12 leading-relaxed max-w-3xl mx-auto text-brand-dark-muted"
+        className="text-base sm:text-lg lg:text-xl mb-10 leading-relaxed text-brand-dark-muted max-w-2xl mx-auto"
       >
-        45+ years of trusted dotmatrix, laser, and ink tank printer repair,
-        corporate AMC contracts, and hardware supply across Mumbai, Thane,
-        and Navi Mumbai. Serving enterprises since 1980.
+        Trusted dotmatrix, laser, and ink tank systems. Reliable AMC contracts and consumables for Mumbai since 1980.
       </motion.p>
 
-      <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto">
+      {/* Anti-Slop: 1 Primary CTA + 1 Secondary Text CTA */}
+      <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto">
         <Link
           href="/store"
-          className="inline-flex items-center justify-center px-8 py-4 text-lg rounded-md font-semibold shadow-sm transition-colors w-full sm:w-auto bg-brand-green text-brand-white-pure hover:bg-brand-green-light"
+          className="inline-flex items-center justify-center px-8 py-3.5 text-base rounded-md font-semibold transition-all bg-brand-green text-brand-white-pure hover:bg-brand-green-light hover:-translate-y-0.5 w-full sm:w-auto shadow-sm"
         >
-          Explore Hardware Catalog
+          Explore hardware
         </Link>
 
         <Link
           href="/services"
-          className="inline-flex items-center justify-center px-8 py-4 text-lg rounded-md font-semibold shadow-sm transition-colors w-full sm:w-auto bg-transparent border-2 border-brand-green text-brand-green hover:bg-brand-green/5"
+          className="text-base font-semibold transition-colors text-brand-green hover:text-brand-green-light group inline-flex items-center justify-center gap-1 w-full sm:w-auto"
         >
-          Explore Technical Services
+          Technical services 
+          <span className="transition-transform group-hover:translate-x-1">→</span>
         </Link>
       </motion.div>
     </motion.div>

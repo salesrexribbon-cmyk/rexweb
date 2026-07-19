@@ -22,9 +22,9 @@ const hardwareCategories = [
     img: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782655737/eonkkw2r9xtz1w2clwon.jpg',
   },
   {
-    title: 'Peripherals & Parts',
-    desc: 'OEM logic boards, tractor feeds, fuser units, and consumables.',
-    img: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782655910/uuarkqojcwweq5zowmfk.jpg',
+    title: 'Accessories, Peripherals & Consumables',
+    desc: 'Computer, laptop, and printer accessories. OEM logic boards, tractor feeds, fuser units, and printer consumables.',
+    img: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1784457690/huypxbxtxjyrrobzywqc.webp',
   }
 ];
 
@@ -84,7 +84,7 @@ export default function HardwareSection() {
             <TextType 
               as="h2"
               className="text-5xl lg:text-6xl font-bold font-outfit mb-6 leading-tight text-brand-green"
-              text={["High Quality", "Printing Hardware."]}
+              text={["High Quality", "Printing Hardware"]}
               typingSpeed={50}
               startOnVisible={true}
               loop={false}

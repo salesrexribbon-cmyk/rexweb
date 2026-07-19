@@ -135,10 +135,10 @@ const NavLink: React.FC<iNavLinkProps> = ({
 				onMouseMove={handleMouseMove}
 				href={href}
 				onClick={handleClick}
-				className="flex items-center justify-between w-full py-3 md:py-6"
+				className="flex items-center justify-between w-full py-2 md:py-5"
 			>
 				<div className="relative flex items-start w-full">
-					<span className="text-black transition-colors duration-500 text-2xl md:text-4xl font-thin mr-2">
+					<span className="text-black transition-colors duration-500 text-xl md:text-3xl font-thin mr-2">
 						{index}.
 					</span>
 					<div className="flex flex-row gap-2">
@@ -152,7 +152,7 @@ const NavLink: React.FC<iNavLinkProps> = ({
 								staggerChildren: 0.075,
 								delayChildren: 0.25,
 							}}
-							className="relative z-10 block text-2xl md:text-4xl font-extralight text-black transition-colors duration-500"
+							className="relative z-10 block text-xl md:text-3xl font-extralight text-black transition-colors duration-500"
 						>
 							{heading.split("").map((letter, i) => {
 								return (
@@ -182,8 +182,8 @@ const Curve: React.FC = () => {
 
 	React.useEffect(() => {
 		const updateHeight = () => {
-			// On mobile, the menu is 80dvh (popup style). On desktop, it is 100dvh.
-			const h = window.innerWidth < 768 ? window.innerHeight * 0.8 : window.innerHeight;
+			// Ensure it always matches the viewport height to avoid scrolling issues
+			const h = window.innerHeight;
 			setPathHeight(h);
 		};
 		updateHeight();
@@ -235,14 +235,14 @@ const CurvedNavbar: React.FC<
 			initial="initial"
 			animate="enter"
 			exit="exit"
-			className="h-[80dvh] md:h-[100dvh] w-[75vw] sm:w-[400px] fixed right-0 top-0 z-40 bg-white shadow-2xl"
+			className="h-[100dvh] w-[75vw] sm:w-[400px] fixed right-0 top-0 z-40 bg-white shadow-2xl"
 		>
 			<div className="h-full pt-11 flex flex-col justify-between overflow-hidden">
-				<div className="flex flex-col text-5xl gap-3 mt-0 px-6 md:px-12 flex-1 min-h-0">
-					<div className="text-black border-b border-black/30 uppercase text-sm mb-0 shrink-0">
+				<div className="flex flex-col gap-2 mt-0 px-6 md:px-12 flex-1 min-h-0">
+					<div className="text-black border-b border-black/30 uppercase text-xs md:text-sm mb-0 shrink-0">
 						<p>Navigation</p>
 					</div>
-					<section className="bg-transparent mt-0 overflow-y-auto flex-1 pb-4">
+					<section className="bg-transparent mt-0 overflow-y-auto flex-1 pb-2">
 						<div className="mx-auto max-w-7xl">
 							{navItems.map((item, index) => {
 								return (
@@ -287,7 +287,7 @@ const Header: React.FC<iHeaderProps> = ({
 		<>
 			<div className="relative">
 				{/* I am adding a simple brand name on the left so the website doesn't lose its identity completely */}
-				<Link href="/" className="fixed left-5 top-4 z-40 text-xl md:text-2xl font-bold text-brand-green font-outfit tracking-tight leading-none">
+				<Link href="/" className="fixed left-5 top-4 z-40 text-xl md:text-2xl font-bold text-brand-green font-outfit tracking-tight leading-none hidden md:block">
 					Rex <br />
 					International<span className="text-brand-maroon">.</span>
 				</Link>

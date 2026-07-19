@@ -148,7 +148,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             <>
               <h2 className="text-2xl font-outfit font-bold text-brand-green mt-10 mb-4">Brands We Service</h2>
               <p className="text-brand-gray-light text-sm mb-4">
-                We cover all major manufacturer models. If your brand isn't listed, contact us — we almost certainly cover it.
+                We cover all major manufacturer models. If your brand isn't listed, contact us, we almost certainly cover it.
               </p>
               <div className="flex flex-wrap gap-2 mb-10 not-prose">
                 {service.supportedBrands.map((brand, i) => (

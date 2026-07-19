@@ -4,23 +4,23 @@ export const products: Product[] = [
   {
     id: "prod-1",
     slug: "epson-lq-310-dotmatrix",
-    name: "Epson LQ-310 Dotmatrix Printer",
+    name: "Epson LQ 310 Dotmatrix Printer",
     categoryId: "cat-dotmatrix",
-    shortDescription: "High speed 24-pin impact printer for retail and commercial billing.",
-    detailedDescription: "The Epson LQ-310 is a purpose-built 24-pin dot matrix printer designed for demanding high volume environments where reliability is non-negotiable. Featuring a print speed of up to 416 characters per second and a robust carriage mechanism rated for 10,000 power-on hours, the LQ-310 is the go-to machine for retail billing counters, pharmaceutical invoicing, and logistics dispatch printing. Its compact footprint makes it ideal for space-constrained POS environments, and its USB, serial, and parallel interface options ensure compatibility with legacy ERP and billing software without any driver modification.",
+    shortDescription: "High speed 24 pin impact printer for retail and commercial billing.",
+    detailedDescription: "The Epson LQ 310 is a purpose built 24 pin dot matrix printer designed for demanding high volume environments where reliability is non negotiable. Featuring a print speed of up to 416 characters per second and a robust carriage mechanism rated for 10,000 power on hours, the LQ 310 is the go to machine for retail billing counters, pharmaceutical invoicing, and logistics dispatch printing. Its compact footprint makes it ideal for space constrained POS environments, and its USB, serial, and parallel interface options ensure compatibility with legacy ERP and billing software without any driver modification.",
     features: ["Fast print speed up to 416 cps", "High MTBF reliability rating", "USB, Serial and Parallel Interfaces", "Compact footprint", "Compatible with all major billing software"],
     useCases: [
       {
         title: "Retail Billing Counters",
-        description: "The LQ-310 is the industry standard for high-traffic retail POS environments. Its near-instantaneous print speed eliminates counter queues during peak hours, and its robust 24-pin head handles multi-copy carbon paper invoices with ease."
+        description: "The LQ 310 is the industry standard for high traffic retail POS environments. Its near instantaneous print speed eliminates counter queues during peak hours, and its robust 24 pin head handles multicopy carbon paper invoices with ease."
       },
       {
         title: "Pharmaceutical Invoicing",
-        description: "Pharmaceutical distributors rely on dotmatrix printers for statutory multi-copy invoices that require a physical carbon impression. The LQ-310's adjustable platen gap accommodates up to 4-part invoice books reliably."
+        description: "Pharmaceutical distributors rely on dotmatrix printers for statutory multicopy invoices that require a physical carbon impression. The LQ 310's adjustable platen gap accommodates up to 4 part invoice books reliably."
       },
       {
         title: "Logistics & Warehouse Dispatch",
-        description: "Dispatch slips, challan copies, and lorry receipts printed on impact printers are legally recognised documents. The LQ-310's parallel port supports direct connection to legacy WMS and ERP systems common in Indian logistics operations."
+        description: "Dispatch slips, challan copies, and lorry receipts printed on impact printers are legally recognised documents. The LQ 310's parallel port supports direct connection to legacy WMS and ERP systems common in Indian logistics operations."
       }
     ],
     specifications: {
@@ -33,8 +33,8 @@ export const products: Product[] = [
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782653597/ub0fz4fjv6ineu68wtrb.png",
     isAvailable: true,
     seo: {
-      title: "Epson LQ-310 Dotmatrix Printer | Buy in Mumbai",
-      description: "Buy the Epson LQ-310 24-pin dotmatrix printer in Mumbai from Rex International. ₹12,000–₹15,000. Ideal for retail billing, pharma invoicing & warehouse dispatch. 45+ years expertise."
+      title: "Epson LQ 310 Dotmatrix Printer | Buy in Mumbai",
+      description: "Buy the Epson LQ 310 24 pin dotmatrix printer in Mumbai from Rex International. ₹12,000–₹15,000. Ideal for retail billing, pharma invoicing & warehouse dispatch. 45+ years expertise."
     }
   },
   {
@@ -43,27 +43,27 @@ export const products: Product[] = [
     name: "HP LaserJet Pro M1136",
     categoryId: "cat-laser",
     shortDescription: "Multifunction monochrome laser printer for office and enterprise environments.",
-    detailedDescription: "The HP LaserJet Pro M1136 is one of the most reliable workhorse multifunction printers in the Indian office market. Offering print, copy, and scan functionality in a compact chassis, the M1136 is built for teams that need consistent, high-quality monochrome output at high monthly duty cycles. HP's proven LaserJet toner delivery system produces sharp, smudge-resistant text at resolutions up to 1200 dpi effective, making it equally suited for client-facing correspondence, internal reports, and regulatory compliance documents. The M1136 also features HP's Smart Install technology, allowing driver-free connection to any Windows PC via USB.",
-    features: ["Print, Copy, Scan (MFP)", "Compact office-ready size", "Energy Star certified", "Smart Install — no driver CD needed", "Up to 18 ppm"],
+    detailedDescription: "The HP LaserJet Pro M1136 is one of the most reliable workhorse multifunction printers in the Indian office market. Offering print, copy, and scan functionality in a compact chassis, the M1136 is built for teams that need consistent, high quality monochrome output at high monthly duty cycles. HP's proven LaserJet toner delivery system produces sharp, smudge resistant text at resolutions up to 1200 dpi effective, making it equally suited for client facing correspondence, internal reports, and regulatory compliance documents. The M1136 also features HP's Smart Install technology, allowing driver free connection to any Windows PC via USB.",
+    features: ["Print, Copy, Scan (MFP)", "Compact office ready size", "Energy Star certified", "Smart Install. No driver CD needed", "Up to 18 ppm"],
     useCases: [
       {
         title: "SME Office Environments",
-        description: "Small and medium enterprises that need a single reliable device for all daily document needs will find the M1136 to be an ideal value proposition. Its low cost-per-page toner system reduces ongoing operational costs significantly compared to inkjet alternatives."
+        description: "Small and medium enterprises that need a single reliable device for all daily document needs will find the M1136 to be an ideal value proposition. Its low cost per page toner system reduces ongoing operational costs significantly compared to inkjet alternatives."
       },
       {
         title: "Accounts & Finance Departments",
-        description: "Finance teams producing GST invoices, payment vouchers, and ledger printouts require consistent monochrome quality at volume. The M1136's 8,000-page monthly duty cycle handles this without breaking a sweat."
+        description: "Finance teams producing GST invoices, payment vouchers, and ledger printouts require consistent monochrome quality at volume. The M1136's 8,000 page monthly duty cycle handles this without breaking a sweat."
       },
       {
         title: "Branch Office Deployment",
-        description: "For companies deploying uniform hardware across multiple branch offices, the M1136's compact size, simple driver installation, and long-life toner cartridges make it the lowest-maintenance multifunction option in its price bracket."
+        description: "For companies deploying uniform hardware across multiple branch offices, the M1136's compact size, simple driver installation, and long life toner cartridges make it the lowest maintenance multifunction option in its price bracket."
       }
     ],
     specifications: {
       "Functions": "Print, copy, scan",
       "Print Speed": "Up to 18 ppm",
       "Resolution": "Up to 600 x 600 dpi (1200 dpi effective)",
-      "Connectivity": "Hi-Speed USB 2.0 port",
+      "Connectivity": "Hi Speed USB 2.0 port",
       "Duty Cycle": "Up to 8,000 pages per month"
     },
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652273/tbqvri1wlikbur3j8jiy.avif",
@@ -78,35 +78,35 @@ export const products: Product[] = [
     slug: "epson-ecotank-l3250",
     name: "Epson EcoTank L3250",
     categoryId: "cat-inktank",
-    shortDescription: "Wi-Fi All-in-One Ink Tank Printer with ultra-low cost per page.",
-    detailedDescription: "The Epson EcoTank L3250 redefines the economics of colour office printing. Its refillable ink tank system eliminates the expensive cartridge replacement cycle that makes conventional inkjet printers so costly to operate — a full set of L3250 ink bottles delivers approximately 4,500 monochrome and 7,500 colour pages, reducing cost-per-page to a fraction of any cartridge-based system. The L3250 offers wireless connectivity via Wi-Fi and Wi-Fi Direct, borderless photo-quality printing, and full mobile printing support through Epson's iPrint application. For businesses producing colour marketing materials, customer proposals, or high volume colour documentation in-house, the L3250 represents an exceptional return on investment.",
-    features: ["Wi-Fi & Wi-Fi Direct", "Borderless A4 printing", "4,500 pages per black bottle", "7,500 pages per colour set", "Mobile printing via Epson iPrint"],
+    shortDescription: "WiFi All in One Ink Tank Printer with ultra low cost per page.",
+    detailedDescription: "The Epson EcoTank L3250 redefines the economics of colour office printing. Its refillable ink tank system eliminates the expensive cartridge replacement cycle that makes conventional inkjet printers so costly to operate. A full set of L3250 ink bottles delivers approximately 4,500 monochrome and 7,500 colour pages, reducing cost per page to a fraction of any cartridge based system. The L3250 offers wireless connectivity via WiFi and WiFi Direct, borderless photo quality printing, and full mobile printing support through Epson's iPrint application. For businesses producing colour marketing materials, customer proposals, or high volume colour documentation in house, the L3250 represents an exceptional return on investment.",
+    features: ["WiFi & WiFi Direct", "Borderless A4 printing", "4,500 pages per black bottle", "7,500 pages per colour set", "Mobile printing via Epson iPrint"],
     useCases: [
       {
-        title: "In-House Marketing & Design",
-        description: "Design agencies, small marketing teams, and business owners who produce colour brochures, proposals, and presentations in-house will find the L3250 to be the most cost effective colour printing solution available, with a cost-per-page up to 90% lower than traditional inkjet cartridges."
+        title: "In House Marketing & Design",
+        description: "Design agencies, small marketing teams, and business owners who produce colour brochures, proposals, and presentations in house will find the L3250 to be the most cost effective colour printing solution available, with a cost per page up to 90% lower than traditional inkjet cartridges."
       },
       {
         title: "School & Educational Institutions",
-        description: "High volume colour printing for worksheets, question papers, and certificates is a constant requirement in educational institutions. The L3250's massive ink yield makes it far more economical than any cartridge-based alternative for this use case."
+        description: "High volume colour printing for worksheets, question papers, and certificates is a constant requirement in educational institutions. The L3250's massive ink yield makes it far more economical than any cartridge based alternative for this use case."
       },
       {
         title: "Home Office & Freelancers",
-        description: "Professionals working from home who need occasional high-quality colour output alongside everyday monochrome printing will benefit from the L3250's wireless convenience and its ability to print borderless photographs without any additional cost."
+        description: "Professionals working from home who need occasional high quality colour output alongside everyday monochrome printing will benefit from the L3250's wireless convenience and its ability to print borderless photographs without any additional cost."
       }
     ],
     specifications: {
-      "Print Method": "On-demand inkjet (Piezoelectric)",
+      "Print Method": "On demand inkjet (Piezoelectric)",
       "Max Resolution": "5760 x 1440 dpi",
       "Print Speed": "Up to 33.0 ppm (Black)",
-      "Connectivity": "USB 2.0, Wi-Fi",
+      "Connectivity": "USB 2.0, WiFi",
       "Mobile Printing": "Epson iPrint, Email Print"
     },
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652749/h4uua6utm7ss3xadh3i0.jpg",
     isAvailable: true,
     seo: {
       title: "Epson EcoTank L3250 Ink Tank Printer | Buy in Mumbai",
-      description: "Buy the Epson EcoTank L3250 Wi-Fi ink tank printer in Mumbai. ₹13,000–₹16,000. Ultra-low cost per page, wireless printing, 4,500 pages per black bottle. Ideal for offices & schools."
+      description: "Buy the Epson EcoTank L3250 WiFi ink tank printer in Mumbai. ₹13,000–₹16,000. Ultra low cost per page, wireless printing, 4,500 pages per black bottle. Ideal for offices & schools."
     }
   },
   {
@@ -115,16 +115,16 @@ export const products: Product[] = [
     name: "Canon imageCLASS MF244dw",
     categoryId: "cat-laser",
     shortDescription: "Wireless Monochrome Laser MFP with automatic duplex printing.",
-    detailedDescription: "The Canon imageCLASS MF244dw is a feature-rich wireless multifunction laser printer built for small to medium businesses that demand fast, high-quality output and professional document handling. Its automatic duplex (double-sided) printing capability — a feature often reserved for higher-end models — reduces paper consumption by up to 50%, delivering both environmental and cost benefits. Printing at up to 28 pages per minute with a true 1200 x 1200 dpi resolution, the MF244dw produces sharp, professional-grade text and graphics. Wireless connectivity allows the device to be shared seamlessly across all office computers and mobile devices without any cabling, while Canon's UFRII LT driver ensures compatibility with all standard document management workflows.",
-    features: ["Automatic Duplex Printing", "Wireless & USB Connectivity", "28 ppm Print Speed", "1200 x 1200 dpi resolution", "250-sheet paper cassette"],
+    detailedDescription: "The Canon imageCLASS MF244dw is a feature rich wireless multifunction laser printer built for small to medium businesses that demand fast, high quality output and professional document handling. Its automatic duplex (double sided) printing capability, a feature often reserved for higher end models, reduces paper consumption by up to 50%, delivering both environmental and cost benefits. Printing at up to 28 pages per minute with a true 1200 x 1200 dpi resolution, the MF244dw produces sharp, professional grade text and graphics. Wireless connectivity allows the device to be shared seamlessly across all office computers and mobile devices without any cabling, while Canon's UFRII LT driver ensures compatibility with all standard document management workflows.",
+    features: ["Automatic Duplex Printing", "Wireless & USB Connectivity", "28 ppm Print Speed", "1200 x 1200 dpi resolution", "250 sheet paper cassette"],
     useCases: [
       {
         title: "Corporate Office Document Printing",
-        description: "The MF244dw's auto-duplex capability makes it the smart choice for corporate offices producing large volumes of internal reports, meeting packs, and regulatory submissions where paper cost and professional presentation are both priorities."
+        description: "The MF244dw's auto duplex capability makes it the smart choice for corporate offices producing large volumes of internal reports, meeting packs, and regulatory submissions where paper cost and professional presentation are both priorities."
       },
       {
         title: "Legal & Compliance Departments",
-        description: "Law firms, CA offices, and compliance teams dealing with lengthy multi-page documents — contracts, affidavits, tax filings — benefit enormously from the MF244dw's auto-duplex feature, as double-sided legal documents are a mandatory format in many proceedings."
+        description: "Law firms, CA offices, and compliance teams dealing with lengthy multipage documents: contracts, affidavits, tax filings benefit enormously from the MF244dw's auto duplex feature, as double sided legal documents are a mandatory format in many proceedings."
       },
       {
         title: "Networked Office Environments",
@@ -136,7 +136,7 @@ export const products: Product[] = [
       "Print Speed": "Up to 28 ppm",
       "Duplex": "Automatic (Standard)",
       "Resolution": "Up to 1200 x 1200 dpi",
-      "Paper Capacity": "250-sheet cassette"
+      "Paper Capacity": "250 sheet cassette"
     },
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652385/ju8fgsxo0ijagsxl7c9t.jpg",
     isAvailable: true,
@@ -151,16 +151,16 @@ export const products: Product[] = [
     name: "TVS MSP 250 Champion",
     categoryId: "cat-dotmatrix",
     shortDescription: "Heavy duty 80 column dotmatrix printer built for Indian commercial conditions.",
-    detailedDescription: "The TVS MSP 250 Champion is India's most trusted dotmatrix printer for rugged commercial environments. Engineered and tested specifically for Indian operating conditions — including wide voltage fluctuations, high ambient temperatures, and dusty workshop environments — the MSP 250 Champion delivers uninterrupted high volume printing at 450 characters per second. Its 9-pin print head with an 80-column print width handles standard A4 paper, multi-part stationery, and continuous roll paper with equal reliability. The MSP 250 Champion's ink bank technology delivers a 40 million character ribbon life — approximately 3–4 times the life of standard dotmatrix ribbons — dramatically reducing consumable costs over a 5-year operational lifespan. It is the preferred choice for Indian retail, pharmaceutical, and FMCG distribution operations.",
+    detailedDescription: "The TVS MSP 250 Champion is India's most trusted dotmatrix printer for rugged commercial environments. Engineered and tested specifically for Indian operating conditions, including wide voltage fluctuations, high ambient temperatures, and dusty workshop environments, the MSP 250 Champion delivers uninterrupted high volume printing at 450 characters per second. Its 9 pin print head with an 80 column print width handles standard A4 paper, multipart stationery, and continuous roll paper with equal reliability. The MSP 250 Champion's ink bank technology delivers a 40 million character ribbon life, approximately 3 to 4 times the life of standard dotmatrix ribbons, dramatically reducing consumable costs over a 5 year operational lifespan. It is the preferred choice for Indian retail, pharmaceutical, and FMCG distribution operations.",
     features: ["Voltage fluctuation tolerance", "450 cps print speed", "Ink bank technology (40M char life)", "1 Original + 3 Copies", "Dustproof mechanism"],
     useCases: [
       {
         title: "FMCG & Pharmaceutical Distribution",
-        description: "FMCG and pharmaceutical distributors handling multi-copy invoices in high-temperature warehouses need a printer that will not jam, overheat, or require constant maintenance. The MSP 250 Champion has been the industry's answer to this requirement for over two decades."
+        description: "FMCG and pharmaceutical distributors handling multicopy invoices in high temperature warehouses need a printer that will not jam, overheat, or require constant maintenance. The MSP 250 Champion has been the industry's answer to this requirement for over two decades."
       },
       {
         title: "Government & Statutory Compliance",
-        description: "Many government departments and statutory bodies still require physical carbon-copy impressions for official documents. The MSP 250 Champion's multi-part printing capability — supporting 1 original and 3 carbon copies simultaneously — fulfils this requirement reliably."
+        description: "Many government departments and statutory bodies still require physical carbon copy impressions for official documents. The MSP 250 Champion's multipart printing capability, supporting 1 original and 3 carbon copies simultaneously, fulfils this requirement reliably."
       },
       {
         title: "Workshop & Industrial Environments",
@@ -178,33 +178,32 @@ export const products: Product[] = [
     isAvailable: true,
     seo: {
       title: "TVS MSP 250 Champion Dotmatrix Printer | Buy in Mumbai",
-      description: "Buy the TVS MSP 250 Champion heavy-duty dotmatrix printer in Mumbai. ₹9,000–₹11,000. 450 cps, 40M char ribbon life. Ideal for FMCG distribution, pharma & industrial environments."
+      description: "Buy the TVS MSP 250 Champion heavy duty dotmatrix printer in Mumbai. ₹9,000–₹11,000. 450 cps, 40M char ribbon life. Ideal for FMCG distribution, pharma & industrial environments."
     }
   },
-
   {
     id: "prod-7",
     slug: "hp-laserjet-pro-mfp-m126nw-plus",
     name: "HP LaserJet Pro MFP M126nw plus",
     categoryId: "cat-laser",
     shortDescription: "Multifunction monochrome laser printer with Print, scan and copy functions.",
-    detailedDescription: "The HP LaserJet Pro MFP M126nw plus is a compact and efficient monochrome laser printer designed for smaller teams of up to 5 users. It handles print, scan, and copy tasks effortlessly with speeds up to 20 pages per minute (A4) and a sharp 600 x 600 dpi resolution. Offering robust connectivity with Ethernet, Wi-Fi 802.11b/g/n, and seamless mobile printing via Apple AirPrint and the HP app, it adapts easily to dynamic office setups. It has a monthly duty cycle of up to 8,000 pages, ensuring reliable daily performance.",
-    features: ["Print, scan and copy", "Up to 20 ppm print speed", "Wi-Fi, Ethernet & USB connectivity", "Mobile printing (AirPrint, Mopria)", "Up to 8,000 pages monthly duty cycle"],
+    detailedDescription: "The HP LaserJet Pro MFP M126nw plus is a compact and efficient monochrome laser printer designed for smaller teams of up to 5 users. It handles print, scan, and copy tasks effortlessly with speeds up to 20 pages per minute (A4) and a sharp 600 x 600 dpi resolution. Offering robust connectivity with Ethernet, WiFi 802.11b/g/n, and seamless mobile printing via Apple AirPrint and the HP app, it adapts easily to dynamic office setups. It has a monthly duty cycle of up to 8,000 pages, ensuring reliable daily performance.",
+    features: ["Print, scan and copy", "Up to 20 ppm print speed", "WiFi, Ethernet & USB connectivity", "Mobile printing (AirPrint, Mopria)", "Up to 8,000 pages monthly duty cycle"],
     useCases: [
       {
         title: "Small Office Teams",
-        description: "Perfect for teams of 1-5 users who need a shared, reliable multifunction device with seamless wireless and network connectivity."
+        description: "Perfect for teams of 1 to 5 users who need a shared, reliable multifunction device with seamless wireless and network connectivity."
       },
       {
         title: "Administrative Workflows",
-        description: "Ideal for printing high-volume monochrome documents like invoices, ledgers, and reports with quick print speeds of 20 ppm."
+        description: "Ideal for printing high volume monochrome documents like invoices, ledgers, and reports with quick print speeds of 20 ppm."
       }
     ],
     specifications: {
       "Functions": "Print, scan and copy",
       "Print Speed": "Up to 20 ppm (A4)",
       "Resolution": "Up to 600 x 600 dpi",
-      "Connectivity": "USB 2.0, Ethernet 10/100, Wi-Fi 802.11b/g/n",
+      "Connectivity": "USB 2.0, Ethernet 10/100, WiFi 802.11b/g/n",
       "Memory": "128 MB",
       "Duty Cycle": "Up to 8,000 pages/month"
     },
@@ -212,7 +211,7 @@ export const products: Product[] = [
     isAvailable: true,
     seo: {
       title: "HP LaserJet Pro MFP M126nw plus | Buy in Mumbai",
-      description: "Buy the HP LaserJet Pro MFP M126nw plus wireless multifunction laser printer in Mumbai. Print, scan, copy with Wi-Fi & Ethernet connectivity."
+      description: "Buy the HP LaserJet Pro MFP M126nw plus wireless multifunction laser printer in Mumbai. Print, scan, copy with WiFi & Ethernet connectivity."
     }
   },
   {
@@ -220,13 +219,13 @@ export const products: Product[] = [
     slug: "hp-laser-mfp-1188nw",
     name: "HP Printer Laser MFP 1188NW",
     categoryId: "cat-laser",
-    shortDescription: "Wi-Fi enabled multifunction laser printer with Print, Scan, and Copy capabilities.",
-    detailedDescription: "The HP Printer Laser MFP 1188NW is designed to deliver fast and efficient performance in a compact, space-saving design. With seamless wireless networking and full mobile printing support, this multifunction printer makes it incredibly easy to print, scan, and copy from virtually anywhere in your workspace. Built for reliability, it provides high-quality monochrome prints ideal for small businesses and home offices seeking professional-grade output.",
-    features: ["Print, Scan, Copy", "Wi-Fi Enabled & Wireless Networking", "Mobile Printing Support", "Fast & Efficient Performance", "Compact & Space Saving Design"],
+    shortDescription: "WiFi enabled multifunction laser printer with Print, Scan, and Copy capabilities.",
+    detailedDescription: "The HP Printer Laser MFP 1188NW is designed to deliver fast and efficient performance in a compact, space saving design. With seamless wireless networking and full mobile printing support, this multifunction printer makes it incredibly easy to print, scan, and copy from virtually anywhere in your workspace. Built for reliability, it provides high quality monochrome prints ideal for small businesses and home offices seeking professional grade output.",
+    features: ["Print, Scan, Copy", "WiFi Enabled & Wireless Networking", "Mobile Printing Support", "Fast & Efficient Performance", "Compact & Space Saving Design"],
     useCases: [
       {
         title: "Small Business & Home Office",
-        description: "Perfect for compact workspaces requiring reliable, high-quality printing, scanning, and copying without the clutter of excessive cables."
+        description: "Perfect for compact workspaces requiring reliable, high quality printing, scanning, and copying without the clutter of excessive cables."
       },
       {
         title: "Wireless Workflows",
@@ -251,26 +250,26 @@ export const products: Product[] = [
     slug: "canon-pixma-gm4070",
     name: "Canon PIXMA GM4070",
     categoryId: "cat-inktank",
-    shortDescription: "High-volume monochrome ink tank printer with auto duplex printing and ADF.",
-    detailedDescription: "The Canon PIXMA GM4070 is a dedicated monochrome ink tank printer engineered for businesses that print in high volumes. With its high page yield ink bottles, it offers incredibly low printing costs. It features automatic double-sided printing and a 35-sheet Auto Document Feeder (ADF) for efficient batch scanning and copying. It also supports seamless wireless connectivity and mobile printing, making it a perfect fit for modern offices seeking reliability and cost-efficiency.",
-    features: ["Print, Scan, Copy", "Auto Duplex Printing", "35-sheet Auto Document Feeder (ADF)", "High Page Yield Ink Bottles", "Wireless & Mobile Printing"],
+    shortDescription: "High volume monochrome ink tank printer with auto duplex printing and ADF.",
+    detailedDescription: "The Canon PIXMA GM4070 is a dedicated monochrome ink tank printer engineered for businesses that print in high volumes. With its high page yield ink bottles, it offers incredibly low printing costs. It features automatic double sided printing and a 35 sheet Auto Document Feeder (ADF) for efficient batch scanning and copying. It also supports seamless wireless connectivity and mobile printing, making it a perfect fit for modern offices seeking reliability and cost efficiency.",
+    features: ["Print, Scan, Copy", "Auto Duplex Printing", "35 sheet Auto Document Feeder (ADF)", "High Page Yield Ink Bottles", "Wireless & Mobile Printing"],
     useCases: [
       {
-        title: "High-Volume Monochrome Printing",
-        description: "Ideal for offices that primarily need black-and-white documents like invoices, reports, and internal memos at a very low cost per page."
+        title: "High Volume Monochrome Printing",
+        description: "Ideal for offices that primarily need black and white documents like invoices, reports, and internal memos at a very low cost per page."
       }
     ],
     specifications: {
       "Functions": "Print, Scan, Copy",
       "Printer Type": "Monochrome Ink Tank",
       "Duplex": "Automatic",
-      "Connectivity": "Wi-Fi, Ethernet, USB 2.0"
+      "Connectivity": "WiFi, Ethernet, USB 2.0"
     },
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652570/sc5ns3e6jdkd9tjnrgsl.png",
     isAvailable: true,
     seo: {
       title: "Canon PIXMA GM4070 Monochrome Ink Tank Printer | Buy in Mumbai",
-      description: "Buy the Canon PIXMA GM4070 high-volume monochrome ink tank printer in Mumbai. Features auto duplex, ADF, and wireless connectivity."
+      description: "Buy the Canon PIXMA GM4070 high volume monochrome ink tank printer in Mumbai. Features auto duplex, ADF, and wireless connectivity."
     }
   },
   {
@@ -278,40 +277,40 @@ export const products: Product[] = [
     slug: "canon-maxify-gx2070",
     name: "Canon MAXIFY GX2070",
     categoryId: "cat-inktank",
-    shortDescription: "Compact MegaTank wireless all-in-one printer for small businesses.",
-    detailedDescription: "The Canon MAXIFY GX2070 is a compact yet powerful MegaTank all-in-one business printer. Designed to handle high-volume color printing, it uses pigment-based inks to deliver sharp, water-resistant, and marker-resistant text and vibrant graphics. It offers high-speed printing, a 35-sheet ADF, and seamless wireless connectivity. With its ultra-low running costs, it's the ideal color printing solution for small to medium businesses that demand professional quality without compromise.",
-    features: ["Print, Scan, Copy", "High-Speed Color Printing", "Pigment-Based Inks for Water Resistance", "35-Sheet ADF", "Ultra-Low Running Costs"],
+    shortDescription: "Compact MegaTank wireless all in one printer for small businesses.",
+    detailedDescription: "The Canon MAXIFY GX2070 is a compact yet powerful MegaTank all in one business printer. Designed to handle high volume color printing, it uses pigment based inks to deliver sharp, water resistant, and marker resistant text and vibrant graphics. It offers high speed printing, a 35 sheet ADF, and seamless wireless connectivity. With its ultra low running costs, it's the ideal color printing solution for small to medium businesses that demand professional quality without compromise.",
+    features: ["Print, Scan, Copy", "High Speed Color Printing", "Pigment Based Inks for Water Resistance", "35 Sheet ADF", "Ultra Low Running Costs"],
     useCases: [
       {
         title: "Small Business Color Printing",
-        description: "Perfect for producing professional-quality color presentations, flyers, and proposals in-house with exceptional cost efficiency."
+        description: "Perfect for producing professional quality color presentations, flyers, and proposals in house with exceptional cost efficiency."
       }
     ],
     specifications: {
       "Functions": "Print, Scan, Copy",
       "Printer Type": "Color MegaTank",
       "Ink Type": "Pigment Ink (All colors)",
-      "Connectivity": "Wi-Fi, USB"
+      "Connectivity": "WiFi, USB"
     },
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782652672/tpxb0ciry9dkb048pzsl.png",
     isAvailable: true,
     seo: {
       title: "Canon MAXIFY GX2070 MegaTank Printer | Buy in Mumbai",
-      description: "Buy the Canon MAXIFY GX2070 compact MegaTank wireless all-in-one printer in Mumbai. High-volume color printing with pigment inks."
+      description: "Buy the Canon MAXIFY GX2070 compact MegaTank wireless all in one printer in Mumbai. High volume color printing with pigment inks."
     }
   },
   {
     id: "prod-11",
     slug: "epson-lq-2090ii-dotmatrix",
-    name: "Epson LQ-2090II Dot Matrix Printer",
+    name: "Epson LQ 2090II Dot Matrix Printer",
     categoryId: "cat-dotmatrix",
-    shortDescription: "Wide-format 24-pin impact printer built for demanding print environments.",
-    detailedDescription: "The Epson LQ-2090II is a fast 24-pin, 136-column dot matrix printer that offers outstanding reliability and an extremely low total cost of ownership (TCO). Designed for demanding print environments, it delivers a blazing speed of 550 characters per second at 10 characters per inch. Its increased reliability boasts a mean time between failure (MTBF) of 25,000 power-on hours. With flexible wide-format printing and the ability to produce an original plus six copies, it meets all your high-volume invoicing and logistics needs using the same trusted consumables as previous models.",
-    features: ["Fast print speed: 550 cps", "High reliability: MTBF of 25,000 POH", "24-pin, 136-column wide format", "Original plus 6 copies", "Low total cost of ownership (TCO)"],
+    shortDescription: "Wide format 24 pin impact printer built for demanding print environments.",
+    detailedDescription: "The Epson LQ 2090II is a fast 24 pin, 136 column dot matrix printer that offers outstanding reliability and an extremely low total cost of ownership (TCO). Designed for demanding print environments, it delivers a blazing speed of 550 characters per second at 10 characters per inch. Its increased reliability boasts a mean time between failure (MTBF) of 25,000 power on hours. With flexible wide format printing and the ability to produce an original plus six copies, it meets all your high volume invoicing and logistics needs using the same trusted consumables as previous models.",
+    features: ["Fast print speed: 550 cps", "High reliability: MTBF of 25,000 POH", "24 pin, 136 column wide format", "Original plus 6 copies", "Low total cost of ownership (TCO)"],
     useCases: [
       {
         title: "Logistics and Shipping",
-        description: "Perfect for printing wide-format multipart shipping documents and manifests where physical carbon copies are required."
+        description: "Perfect for printing wide format multipart shipping documents and manifests where physical carbon copies are required."
       },
       {
         title: "Demanding Print Environments",
@@ -329,18 +328,18 @@ export const products: Product[] = [
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782653824/zp4nwjwqcpcmhjp5scj2.jpg",
     isAvailable: true,
     seo: {
-      title: "Epson LQ-2090II Dot Matrix Printer | Buy in Mumbai",
-      description: "Buy the Epson LQ-2090II wide-format 24-pin dot matrix printer in Mumbai. 550 cps speed, 136 columns, and original + 6 copies for demanding environments."
+      title: "Epson LQ 2090II Dot Matrix Printer | Buy in Mumbai",
+      description: "Buy the Epson LQ 2090II wide format 24 pin dot matrix printer in Mumbai. 550 cps speed, 136 columns, and original + 6 copies for demanding environments."
     }
   },
   {
     id: "prod-12",
     slug: "epson-plq-30-passbook-printer",
-    name: "Epson PLQ-30 Passbook Printer",
+    name: "Epson PLQ 30 Passbook Printer",
     categoryId: "cat-dotmatrix",
-    shortDescription: "High-performance 24-pin passbook printer designed for the banking and financial sector.",
-    detailedDescription: "The Epson PLQ-30 series passbook printer is the undisputed industry standard for banks, post offices, and financial institutions. It handles passbooks up to 2.6mm thick with a rapid print speed of up to 624 characters per second, dramatically reducing customer queue times. Its advanced auto-platen gap adjustment ensures perfect print quality regardless of the document's thickness. With an incredibly high Mean Time Between Failures (MTBF) of 30,000 power-on hours, it delivers unmatched reliability in critical, high-volume transactional environments.",
-    features: ["Specialized for Passbook Printing", "Ultra-fast print speed up to 624 cps", "Auto-Platen Gap Adjustment", "Handles media up to 2.6mm thick", "Exceptional MTBF of 30,000 POH"],
+    shortDescription: "High performance 24 pin passbook printer designed for the banking and financial sector.",
+    detailedDescription: "The Epson PLQ 30 series passbook printer is the undisputed industry standard for banks, post offices, and financial institutions. It handles passbooks up to 2.6mm thick with a rapid print speed of up to 624 characters per second, dramatically reducing customer queue times. Its advanced auto platen gap adjustment ensures perfect print quality regardless of the document's thickness. With an incredibly high Mean Time Between Failures (MTBF) of 30,000 power on hours, it delivers unmatched reliability in critical, high volume transactional environments.",
+    features: ["Specialized for Passbook Printing", "Ultra fast print speed up to 624 cps", "Auto Platen Gap Adjustment", "Handles media up to 2.6mm thick", "Exceptional MTBF of 30,000 POH"],
     useCases: [
       {
         title: "Banking & Financial Services",
@@ -352,7 +351,7 @@ export const products: Product[] = [
       }
     ],
     specifications: {
-      "Print Method": "Impact dot matrix (24-pin)",
+      "Print Method": "Impact dot matrix (24 pin)",
       "Print Speed": "Up to 624 cps (12 cpi)",
       "Media Thickness": "Up to 2.6mm",
       "Copy Capability": "1 Original + 6 Copies",
@@ -361,18 +360,18 @@ export const products: Product[] = [
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654150/xjkp0hyunyvw5j1bzvxk.png",
     isAvailable: true,
     seo: {
-      title: "Epson PLQ-30 Passbook Printer | Buy in Mumbai",
-      description: "Buy the Epson PLQ-30 24-pin passbook printer in Mumbai. Industry standard for banks with 624 cps speed and auto-platen gap adjustment."
+      title: "Epson PLQ 30 Passbook Printer | Buy in Mumbai",
+      description: "Buy the Epson PLQ 30 24 pin passbook printer in Mumbai. Industry standard for banks with 624 cps speed and auto platen gap adjustment."
     }
   },
   {
     id: "prod-13",
     slug: "hp-smart-tank-580",
-    name: "HP Smart Tank 580 All-in-One",
+    name: "HP Smart Tank 580 All in One",
     categoryId: "cat-inktank",
-    shortDescription: "Wireless high-capacity color ink tank printer with seamless mobile connectivity.",
-    detailedDescription: "The HP Smart Tank 580 is a feature-packed all-in-one printer offering incredible value for high-volume color printing. It features a transparent, spill-free refill system and includes enough ink in the box to print up to 12,000 black pages or 6,000 color pages. With self-healing dual-band Wi-Fi and the best-in-class HP Smart App, you can easily print, scan, and copy from your smartphone. It produces dark, crisp text and vibrant color graphics, making it perfect for small businesses and dynamic home offices.",
-    features: ["Print, Scan, Copy", "High-capacity spill-free ink tanks", "Self-healing Dual-Band Wi-Fi", "Bluetooth Low Energy (BLE)", "Borderless color printing"],
+    shortDescription: "Wireless high capacity color ink tank printer with seamless mobile connectivity.",
+    detailedDescription: "The HP Smart Tank 580 is a feature packed all in one printer offering incredible value for high volume color printing. It features a transparent, spill free refill system and includes enough ink in the box to print up to 12,000 black pages or 6,000 color pages. With self healing dual band WiFi and the best in class HP Smart App, you can easily print, scan, and copy from your smartphone. It produces dark, crisp text and vibrant color graphics, making it perfect for small businesses and dynamic home offices.",
+    features: ["Print, Scan, Copy", "High capacity spill free ink tanks", "Self healing Dual Band WiFi", "Bluetooth Low Energy (BLE)", "Borderless color printing"],
     useCases: [
       {
         title: "Small Business & Home Office",
@@ -380,20 +379,20 @@ export const products: Product[] = [
       },
       {
         title: "Education & Student Projects",
-        description: "Ideal for printing high-volume, full-color school assignments and projects without worrying about ink costs."
+        description: "Ideal for printing high volume, full color school assignments and projects without worrying about ink costs."
       }
     ],
     specifications: {
       "Functions": "Print, Scan, Copy",
-      "Connectivity": "Hi-Speed USB 2.0, Wi-Fi, Bluetooth LE",
+      "Connectivity": "Hi Speed USB 2.0, WiFi, Bluetooth LE",
       "Mobile Printing": "HP Smart App, Apple AirPrint, Mopria",
       "Print Quality": "Up to 4800 x 1200 optimized dpi color"
     },
     imageUrl: "https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782654200/s81miperhij7z71hc8ph.png",
     isAvailable: true,
     seo: {
-      title: "HP Smart Tank 580 All-in-One Printer | Buy in Mumbai",
-      description: "Buy the HP Smart Tank 580 wireless color ink tank printer in Mumbai. High capacity, dual-band Wi-Fi, and ultra-low cost printing."
+      title: "HP Smart Tank 580 All in One Printer | Buy in Mumbai",
+      description: "Buy the HP Smart Tank 580 wireless color ink tank printer in Mumbai. High capacity, dual band WiFi, and ultra low cost printing."
     }
   },
   {
@@ -401,9 +400,9 @@ export const products: Product[] = [
     slug: "canon-lbp2900b",
     name: "Canon imageCLASS LBP2900B",
     categoryId: "cat-laser",
-    shortDescription: "Ultra-reliable, robust single-function monochrome laser printer.",
-    detailedDescription: "The Canon imageCLASS LBP2900B is a legendary single-function monochrome laser printer, known across India for its unbreakable reliability and compact size. Designed for small offices and individual users, it delivers crisp, professional-quality documents at a speed of 12 pages per minute with a sharp 2400 x 600 dpi equivalent resolution. Thanks to Canon's Advanced Printing Technology (CAPT) and High-SCoA (Smart Compression Architecture), it requires virtually zero warm-up time from standby mode. It remains the top choice for tough, no-nonsense daily printing.",
-    features: ["Single-function monochrome laser", "Virtually zero warm-up time", "Jam-free robust paper handling", "Compact footprint", "Low-cost Canon 303 Toner Cartridge"],
+    shortDescription: "Ultra reliable, robust single function monochrome laser printer.",
+    detailedDescription: "The Canon imageCLASS LBP2900B is a legendary single function monochrome laser printer, known across India for its unbreakable reliability and compact size. Designed for small offices and individual users, it delivers crisp, professional quality documents at a speed of 12 pages per minute with a sharp 2400 x 600 dpi equivalent resolution. Thanks to Canon's Advanced Printing Technology (CAPT) and High SCoA (Smart Compression Architecture), it requires virtually zero warm up time from standby mode. It remains the top choice for tough, no nonsense daily printing.",
+    features: ["Single function monochrome laser", "Virtually zero warm up time", "Jam free robust paper handling", "Compact footprint", "Low cost Canon 303 Toner Cartridge"],
     useCases: [
       {
         title: "Individual Workstations & Clinics",
@@ -425,7 +424,7 @@ export const products: Product[] = [
     isAvailable: true,
     seo: {
       title: "Canon imageCLASS LBP2900B Laser Printer | Buy in Mumbai",
-      description: "Buy the Canon LBP2900B single-function laser printer in Mumbai. Legendary reliability, fast print speeds, and zero warm-up time."
+      description: "Buy the Canon LBP2900B single function laser printer in Mumbai. Legendary reliability, fast print speeds, and zero warm up time."
     }
   }
 ];

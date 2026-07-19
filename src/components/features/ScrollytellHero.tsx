@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState, ReactNode } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { usePreload } from '@/lib/contexts/PreloadContext';
 
@@ -258,7 +259,7 @@ export default function ScrollytellHero({ children }: ScrollytellHeroProps) {
 
         {/* Scroll Prompt Indicator */}
         <div 
-          className="absolute inset-x-0 bottom-50 sm:bottom-9 z-20 flex items-end justify-center pointer-events-none"
+          className="absolute inset-x-0 bottom-[22%] sm:bottom-9 z-20 flex items-end justify-center pointer-events-none"
           style={{
             opacity: scrollPromptOpacity,
             willChange: 'opacity',
@@ -295,7 +296,7 @@ export default function ScrollytellHero({ children }: ScrollytellHeroProps) {
          * so the scroll driver isn't accidentally blocked by clickable buttons.
          */}
         <div
-          className="absolute inset-0 z-20 flex items-center justify-center bg-brand-white-pure"
+          className="absolute inset-0 z-20 flex items-center justify-center bg-paper"
           style={{
             opacity:       heroOpacity,
             pointerEvents: heroOpacity > 0.5 ? 'auto' : 'none',

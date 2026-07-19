@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 interface ScrollChoreographyProps {
@@ -37,11 +37,23 @@ export function ScrollChoreography({
     restDelta: 0.001,
   });
 
-  // Default positions relative to center
-  const xLeft = "-20vw";
-  const xRight = "20vw";
-  const yTop = "-14vh";
-  const yBottom = "14vh";
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Responsive positions relative to center
+  const xLeft = isMobile ? "-20vw" : "-24vw";
+  const xRight = isMobile ? "20vw" : "24vw";
+  const yTop = isMobile ? "-14vh" : "-21vh";
+  const yBottom = isMobile ? "14vh" : "21vh";
+
+  const imgWidth = isMobile ? "36vw" : "46vw";
+  const imgHeight = isMobile ? "24vh" : "40vh";
 
   // Phase 1: 0 - 0.3 (Diagonal movement)
   // Phase 2: 0.35 - 0.65 (Stack alignment to center)
@@ -64,8 +76,8 @@ export function ScrollChoreography({
   const trY = useTransform(smoothProgress, [0, 0.3, 0.35, 0.65, 1], [yTop, yTop, yTop, "0vh", "0vh"]);
 
   // Top Right (Hero) scaling/expansion properties
-  const heroWidth = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], ["36vw", "36vw", "100vw", "100vw"]);
-  const heroHeight = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], ["24vh", "24vh", "100vh", "100vh"]);
+  const heroWidth = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], [imgWidth, imgWidth, "100vw", "100vw"]);
+  const heroHeight = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], [imgHeight, imgHeight, "100vh", "100vh"]);
   
   // Also adjust borderRadius so it becomes 0 when full screen
   const heroRadius = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], ["0.5rem", "0.5rem", "0rem", "0rem"]);
@@ -78,9 +90,9 @@ export function ScrollChoreography({
   const textOpacity = useTransform(smoothProgress, [0.1, 0.3, 0.65, 0.75], [0, 1, 1, 0]);
 
   const baseImageClasses =
-    "absolute left-1/2 top-1/2 w-[36vw] h-[24vh] overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-muted shadow-2xl will-change-transform rounded-lg";
+    "absolute left-1/2 top-1/2 overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-muted shadow-2xl will-change-transform rounded-lg";
     
-  const textClasses = "absolute left-1/2 top-1/2 w-[36vw] h-[24vh] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center p-6 text-center will-change-transform";
+  const textClasses = "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center p-6 text-center will-change-transform";
 
   return (
     <div ref={containerRef} className={cn("relative h-[300vh] w-full", className)}>
@@ -89,7 +101,7 @@ export function ScrollChoreography({
 
           {/* Top Left Text Content (appears when Top Left Image moves) */}
           <motion.div
-            style={{ x: xLeft, y: yTop, opacity: textOpacity }}
+            style={{ x: xLeft, y: yTop, opacity: textOpacity, width: imgWidth, height: imgHeight }}
             className={cn(textClasses, "z-0")}
           >
             <div className="text-brand-dark max-w-sm">
@@ -104,14 +116,14 @@ export function ScrollChoreography({
 
           {/* Bottom Right Text Content (appears when Bottom Right Image moves) */}
           <motion.div
-            style={{ x: xRight, y: yBottom, opacity: textOpacity }}
+            style={{ x: xRight, y: yBottom, opacity: textOpacity, width: imgWidth, height: imgHeight }}
             className={cn(textClasses, "z-0")}
           >
             <div className="text-brand-dark max-w-sm">
               {content?.bottomRightText || (
                 <>
                   <h3 className="text-2xl font-bold mb-2 font-outfit text-brand-green">Quality Assured</h3>
-                  <p className="text-sm text-brand-dark-muted">Rigorous testing ensures every peripheral meets exact OEM standards.</p>
+                  <p className="text-sm text-brand-dark-muted">Rigorous testing ensures every consumable meets exact OEM standards.</p>
                 </>
               )}
             </div>
@@ -119,7 +131,7 @@ export function ScrollChoreography({
 
           {/* Top Left Image */}
           <motion.div
-            style={{ x: tlX, y: tlY, opacity: underImagesOpacity }}
+            style={{ x: tlX, y: tlY, opacity: underImagesOpacity, width: imgWidth, height: imgHeight }}
             className={cn(baseImageClasses, "z-10")}
           >
             <img src={images.topLeft} alt="Top Left" className="h-full w-full object-cover" />
@@ -127,7 +139,7 @@ export function ScrollChoreography({
 
           {/* Bottom Right Image */}
           <motion.div
-            style={{ x: brX, y: brY, opacity: underImagesOpacity }}
+            style={{ x: brX, y: brY, opacity: underImagesOpacity, width: imgWidth, height: imgHeight }}
             className={cn(baseImageClasses, "z-20")}
           >
             <img src={images.bottomRight} alt="Bottom Right" className="h-full w-full object-cover" />
@@ -135,7 +147,7 @@ export function ScrollChoreography({
 
           {/* Bottom Left Image */}
           <motion.div
-            style={{ x: blX, y: blY, opacity: underImagesOpacity }}
+            style={{ x: blX, y: blY, opacity: underImagesOpacity, width: imgWidth, height: imgHeight }}
             className={cn(baseImageClasses, "z-30")}
           >
             <img src={images.bottomLeft} alt="Bottom Left" className="h-full w-full object-cover" />
@@ -152,7 +164,11 @@ export function ScrollChoreography({
             }}
             className={cn(baseImageClasses, "z-40 origin-center bg-black/5 rounded-none")}
           >
-            <img src={images.topRight} alt="Top Right (Hero)" className="h-full w-full object-cover" />
+            <img 
+              src={images.topRight} 
+              alt="Top Right (Hero)" 
+              className={cn("h-full w-full object-cover", !isMobile && "object-[center_70%]")} 
+            />
             
             {/* Optional: Add content that fades in on the final full-screen image */}
             <motion.div 
@@ -161,7 +177,7 @@ export function ScrollChoreography({
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-outfit">The Rex Advantage</h2>
               <p className="text-lg md:text-xl text-white/90 max-w-2xl">
-                Uncompromising quality for mission-critical operations.
+                Uncompromising quality for Business related operations.
               </p>
             </motion.div>
           </motion.div>

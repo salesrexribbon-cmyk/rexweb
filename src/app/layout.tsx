@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/curved-menu";
 import Footer from "@/components/layout/Footer";
+import NextPageCTA from "@/components/layout/NextPageCTA";
 import { siteSettings } from "@/lib/data/site-settings";
 import { defaultMetadata, getBaseUrl } from "@/lib/seo";
 import { CookieConsent } from "@/components/ui/CookieConsent";
@@ -32,7 +33,7 @@ export default function RootLayout({
     "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Shop No. 8, Ground Floor, Next to Vikas Centre, Kamala Nehru Shopping Centre, Netaji Subhash Road",
+      "streetAddress": "Office No. 8, Ground Floor, Next to Vikas Centre, Kamala Nehru Shopping Centre, Netaji Subhash Road",
       "addressLocality": "Mulund West, Mumbai",
       "postalCode": "400080",
       "addressRegion": "Maharashtra",
@@ -83,6 +84,7 @@ export default function RootLayout({
           <GlobalPreloader />
           <Header />
           <div className="flex-1 flex flex-col">{children}</div>
+          <NextPageCTA />
           <Footer />
           <CookieConsent />
         </PreloadProvider>

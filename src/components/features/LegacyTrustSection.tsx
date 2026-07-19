@@ -68,7 +68,7 @@ export default function LegacyTrustSection() {
             <TextType
               as="h2"
               className="text-5xl md:text-7xl font-bold font-outfit leading-tight mb-6 text-brand-dark"
-              text={["Four Decades of", "Unbroken Trust."]}
+              text={["Four Decades of", "Unbroken Trust"]}
               typingSpeed={50}
               startOnVisible={true}
               loop={false}

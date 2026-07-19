@@ -16,16 +16,16 @@ export const metadata: Metadata = {
 
 const STATS = [
   { value: "45+", label: "Years of Service" },
-  { value: "4hr", label: "Emergency Response" },
+  { value: "5hr", label: "Emergency Response" },
   { value: "100%", label: "OEM Parts" },
   { value: "All", label: "Brands Covered" },
 ];
 
 const PROCESS = [
-  { step: "01", title: "Diagnostics", desc: "We run a comprehensive hardware test to precisely identify the root-cause component failure." },
-  { step: "02", title: "Transparent Quote", desc: "You receive a clear, itemized price for required OEM or vetted compatible replacement parts — no surprises." },
-  { step: "03", title: "Precision Repair", desc: "Certified technicians perform component-level restoration and factory-calibrated installation." },
-  { step: "04", title: "Stress Test & Sign-off", desc: "Continuous run-time testing under load before the unit is certified ready for deployment." },
+  { step: "01", title: "Diagnostics", desc: "We run a comprehensive hardware test to precisely identify the root problem of  component failure." },
+  { step: "02", title: "Transparent Quote", desc: "You receive a clear, itemized price for required OEM or vetted compatible replacement parts. No surprises." },
+  { step: "03", title: "Precision Repair", desc: "Certified technicians perform component level restoration and factory calibrated installation." },
+  { step: "04", title: "Stress Test & Sign-off", desc: "Continuous run time testing under load before the unit is certified ready for deployment." },
 ];
 
 export default async function ServicesPage() {
@@ -67,7 +67,7 @@ export default async function ServicesPage() {
               loop={false}
             />
             <p className="text-brand-gray-light/70 text-sm md:text-lg max-w-2xl leading-relaxed">
-              Our certified technicians provide component-level repair and preventative maintenance to ensure your printing infrastructure experiences zero unplanned downtime.
+              Our certified technicians provide component level repair and preventative maintenance to ensure your printing infrastructure experiences zero unplanned downtime.
             </p>
             <div className="flex flex-wrap gap-3 mt-2">
               <a
@@ -112,7 +112,7 @@ export default async function ServicesPage() {
               startOnVisible={true}
               loop={false}
             />
-            <p className="text-brand-dark-muted text-sm md:text-base mt-2 max-w-xl">Tap any service to inquire via WhatsApp — we respond within the hour.</p>
+            <p className="text-brand-dark-muted text-sm md:text-base mt-2 max-w-xl">Tap any service to inquire via WhatsApp, we respond within the hour.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
             {services.map((svc) => (
@@ -133,7 +133,7 @@ export default async function ServicesPage() {
               startOnVisible={true}
               loop={false}
             />
-            <p className="text-brand-gray-light/70 text-sm md:text-base mt-2">Our 4-step process guarantees first-time resolution.</p>
+            <p className="text-brand-gray-light/70 text-sm md:text-base mt-2">Our 4 step process guarantees first time resolution.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {PROCESS.map(({ step, title, desc }) => (
@@ -158,7 +158,7 @@ export default async function ServicesPage() {
             We fix what others declare dead.
           </BlockTextReveal>
           <BlockTextReveal blockColor="var(--color-brand-dark)" delay={0.3} className="text-2xl md:text-4xl font-bold font-outfit text-brand-dark leading-tight">
-            Component-level. Not just swap-and-go.
+            Component level. Not just swap and go.
           </BlockTextReveal>
           <BlockTextReveal blockColor="var(--color-brand-gray)" delay={0.6} className="text-2xl md:text-4xl font-bold font-outfit text-brand-dark leading-tight">
             Trusted by enterprises since 1980.
@@ -181,7 +181,7 @@ export default async function ServicesPage() {
               />
               <div className="text-brand-dark-muted text-sm md:text-base leading-relaxed mb-6">
                 <ScrollReveal baseOpacity={0} blurStrength={5} enableBlur={true}>
-                  Rex International takes complete ownership of your printing hardware uptime under an AMC. From banking back-office laser fleets to retail dotmatrix billing stations — we cover it all.
+                  Rex International takes complete ownership of your printing hardware uptime under an AMC. From banking back office laser fleets to retail dotmatrix billing stations, we cover it all.
                 </ScrollReveal>
               </div>
               <a
@@ -196,7 +196,7 @@ export default async function ServicesPage() {
             </div>
             <div className="grid grid-cols-1 gap-3">
               {[
-                { title: "Guaranteed Response Times", desc: "SLA-backed 5-hour response for critical breakdowns, anywhere in Mumbai." },
+                { title: "Guaranteed Response Times", desc: "SLA backed 5 hour response for critical breakdowns, anywhere in Mumbai." },
                 { title: "Free Preventative Maintenance", desc: "Scheduled monthly or quarterly visits to catch issues before they become failures." },
                 { title: "Priority OEM Parts Access", desc: "AMC clients get first access to rare and imported OEM components." },
                 { title: "Standby Machine Provision", desc: "We loan a working unit during major repairs so your operations never stop." },

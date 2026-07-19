@@ -28,7 +28,7 @@ export default async function StorePage() {
 
   return (
     <main className="flex-1">
-      {/* Hero — tight on mobile */}
+      {/* Hero, tight on mobile */}
       <section className="bg-brand-white pt-28 pb-10 md:pt-32 md:pb-24 border-b border-brand-gray/20">
         <div className="container-inner text-center max-w-4xl mx-auto px-4">
           <TextType
@@ -70,7 +70,7 @@ export default async function StorePage() {
         </div>
       </section>
 
-      {/* Enterprise section — compact on mobile */}
+      {/* Enterprise section, compact on mobile */}
       <section className="py-12 md:py-24 bg-brand-dark text-brand-white-pure">
         <div className="container-inner max-w-5xl mx-auto px-4 text-center">
           <TextType
@@ -83,7 +83,7 @@ export default async function StorePage() {
           />
           <div className="text-sm md:text-xl text-brand-gray-light/80 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed">
             <ScrollReveal baseOpacity={0} blurStrength={5} enableBlur={true}>
-              We streamline hardware supply chains for large organizations — from 50-unit warehouse deployments to hard-to-find legacy logic boards.
+              We streamline hardware supply chains for large organizations, from 50 unit warehouse deployments to hard to find legacy logic boards.
             </ScrollReveal>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-left">
@@ -93,11 +93,11 @@ export default async function StorePage() {
             </div>
             <div className="p-5 md:p-8 border border-brand-white-pure/10 rounded-2xl bg-brand-white-pure/5">
               <h3 className="text-base md:text-xl font-bold font-outfit mb-2 md:mb-3 text-brand-green">Legacy Parts</h3>
-              <p className="text-sm text-brand-gray-light/60">Extensive network to source out-of-production components for older infrastructure.</p>
+              <p className="text-sm text-brand-gray-light/60">Extensive network to source out of production components for older infrastructure.</p>
             </div>
             <div className="p-5 md:p-8 border border-brand-white-pure/10 rounded-2xl bg-brand-white-pure/5">
-              <h3 className="text-base md:text-xl font-bold font-outfit mb-2 md:mb-3 text-brand-green">Pan-India Logistics</h3>
-              <p className="text-sm text-brand-gray-light/60">Secure, insured transit for fragile printing machinery with expedited options.</p>
+              <h3 className="text-base md:text-xl font-bold font-outfit mb-2 md:mb-3 text-brand-green">Local Delivery</h3>
+              <p className="text-sm text-brand-gray-light/60">Secure transit for fragile printing machinery across the Mumbai metropolitan area.</p>
             </div>
           </div>
         </div>
