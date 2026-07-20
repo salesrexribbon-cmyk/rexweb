@@ -59,7 +59,7 @@ export default async function StorePage() {
       <section className="hidden md:block section-padding bg-brand-white-pure">
         <div className="container-inner flex flex-col gap-12">
           {Object.entries(grouped).map(([catId, catProducts]) => (
-            <div key={catId}>
+            <div key={catId} id={catId} className="scroll-mt-32">
               <h2 className="text-2xl font-bold font-outfit text-brand-dark mb-6 border-b border-brand-gray/20 pb-2">
                 {CATEGORY_LABELS[catId] ?? catId.replace("cat-", "").toUpperCase()}
               </h2>
@@ -87,8 +87,8 @@ export default async function StorePage() {
               />
             </div>
             <div className="md:col-span-6 lg:col-span-4 flex items-end">
-              <div className="text-base md:text-lg text-brand-gray-light/70 leading-relaxed">
-                <ScrollReveal baseOpacity={0} blurStrength={5} enableBlur={true}>
+              <div className="text-base md:text-lg text-brand-white-pure leading-relaxed">
+                <ScrollReveal as="p" containerClassName="text-brand-white-pure" baseOpacity={0} blurStrength={5} enableBlur={true}>
                   We streamline hardware supply chains for large organizations, from 50 unit warehouse deployments to hard to find legacy logic boards.
                 </ScrollReveal>
               </div>

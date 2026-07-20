@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import TextType from '@/components/ui/TextType';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
@@ -10,21 +11,25 @@ const hardwareCategories = [
     title: 'Dotmatrix Systems',
     desc: 'Heavy duty continuous printing solutions for banking, logistics, and billing.',
     img: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782655340/h5b986hmow9xgzqggk8x.jpg',
+    link: '/store#cat-dotmatrix'
   },
   {
     title: 'Laser Printers',
     desc: 'High speed, crisp monochrome and color laser arrays for enterprise networks.',
     img: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782655562/brxnjcesctslgvyqsd4j.jpg',
+    link: '/store#cat-laser'
   },
   {
     title: 'Ink Tank Technology',
     desc: 'Cost effective, high yield monochrome as well as coloured photo and document printing for design and office use.',
     img: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1782655737/eonkkw2r9xtz1w2clwon.jpg',
+    link: '/store#cat-inktank'
   },
   {
     title: 'Accessories, Peripherals & Consumables',
     desc: 'Computer, laptop, and printer accessories. OEM logic boards, tractor feeds, fuser units, and printer consumables.',
     img: 'https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto,q_auto/v1784457690/huypxbxtxjyrrobzywqc.webp',
+    link: '/store'
   }
 ];
 
@@ -66,9 +71,9 @@ export default function HardwareSection() {
                   marginTop: i === 0 ? '0' : '-20px' // Slight overlap to create the stack look
                 }}
               >
-                <div className="w-full aspect-[4/3] overflow-hidden rounded-2xl bg-brand-gray-light shadow-md">
+                <Link href={cat.link} className="w-full aspect-[4/3] overflow-hidden rounded-2xl bg-brand-gray-light shadow-md block">
                   <img src={cat.img} alt={cat.title} className="w-full h-full object-cover" />
-                </div>
+                </Link>
                 <div className="px-2">
                   <h3 className="text-2xl font-bold font-outfit text-brand-dark mb-2">{cat.title}</h3>
                   <p className="text-brand-dark-muted leading-relaxed">{cat.desc}</p>
@@ -106,7 +111,7 @@ export default function HardwareSection() {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="flex flex-col gap-6"
               >
-                <div className="w-full aspect-[4/3] overflow-hidden rounded-2xl bg-brand-gray-light shadow-card group">
+                <Link href={cat.link} className="w-full aspect-[4/3] overflow-hidden rounded-2xl bg-brand-gray-light shadow-card group block cursor-pointer">
                   <motion.img 
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
@@ -114,7 +119,7 @@ export default function HardwareSection() {
                     alt={cat.title} 
                     className="w-full h-full object-cover" 
                   />
-                </div>
+                </Link>
                 <div>
                   <h3 className="text-3xl font-bold font-outfit mb-3 text-brand-dark">{cat.title}</h3>
                   <p className="text-brand-dark-muted text-lg max-w-xl">{cat.desc}</p>
