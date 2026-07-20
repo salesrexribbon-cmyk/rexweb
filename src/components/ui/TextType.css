@@ -1,11 +1,10 @@
 .text-type {
-  display: inline-block;
+  display: inline;
   white-space: pre-wrap;
 }
 
 .text-type__cursor {
-  margin-left: 0.25rem;
-  display: inline-block;
+  display: inline;
   opacity: 1;
 }
 

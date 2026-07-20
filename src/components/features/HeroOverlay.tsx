@@ -40,7 +40,7 @@ export default function HeroOverlay() {
       {/* Hand-drawn circle restored, tighter typography */}
       <motion.h1
         variants={itemVariants}
-        className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.05] mb-6 font-outfit text-brand-green"
+        className="text-4xl sm:text-5xl lg:text-8xl font-bold tracking-tighter leading-[1.05] mb-6 font-outfit text-brand-green"
       >
         The backbone for <br className="hidden sm:block" />
         <span className="text-brand-dark">
@@ -51,7 +51,7 @@ export default function HeroOverlay() {
       {/* Concise Subtext */}
       <motion.p
         variants={itemVariants}
-        className="text-base sm:text-lg lg:text-xl mb-10 leading-relaxed text-brand-dark-muted max-w-2xl mx-auto"
+        className="text-base sm:text-lg lg:text-2xl mb-12 leading-relaxed text-brand-dark-muted max-w-3xl mx-auto"
       >
         Trusted dotmatrix, laser, and ink tank systems. Reliable AMC contracts and consumables for Mumbai since 1980.
       </motion.p>

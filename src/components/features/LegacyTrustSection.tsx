@@ -75,7 +75,7 @@ export default function LegacyTrustSection() {
             />
             <div className="text-lg md:text-xl text-brand-dark-muted max-w-xl">
               <ScrollReveal baseOpacity={0} blurStrength={5} enableBlur={true}>
-                Since 1980, Rex International has been the silent backbone for enterprises, ensuring high volume printing operations never stop.
+                Since 1980, Rex International has been the silent backbone for enterprises, ensuring high volume printing operations that never stop.
               </ScrollReveal>
             </div>
           </div>
@@ -91,11 +91,11 @@ export default function LegacyTrustSection() {
 
             <div className="md:pl-12">
               <p className="text-6xl md:text-8xl font-bold font-outfit tabular-nums text-brand-green">45+</p>
-              <p className="text-brand-dark-muted mt-2 uppercase tracking-widest text-sm font-semibold">Years Active</p>
+              <p className="text-brand-dark-muted mt-2 uppercase tracking-widest text-sm font-semibold">Years of Esteemed Services</p>
             </div>
             <div>
               <p className="text-6xl md:text-8xl font-bold font-outfit tabular-nums text-brand-green">{clients}+</p>
-              <p className="text-brand-dark-muted mt-2 uppercase tracking-widest text-sm font-semibold">B2B Clients</p>
+              <p className="text-brand-dark-muted mt-2 uppercase tracking-widest text-sm font-semibold">B2B & B2C Clients</p>
             </div>
           </motion.div>
         </motion.div>

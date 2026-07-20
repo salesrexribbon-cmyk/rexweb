@@ -61,10 +61,10 @@ export default async function AboutPage() {
                   <strong>Hansraj Lalani</strong> laid the bedrock of Rex International in 1980. Today, <strong>Virat Lalani</strong> carries the torch, steering the legacy forward. As a <strong>wholesale printer supplier</strong> and <strong>corporate printer AMC provider</strong> in Mumbai, we serve businesses ranging from local shops to large enterprise networks across Maharashtra.
                 </p>
                 <ScrollReveal as="p" baseOpacity={0} blurStrength={5} enableBlur={true}>
-                  We began by manufacturing ribbon cassettes along with indigenous and high-quality ribbon inks for dotmatrix printers. We still rely on that deep technical expertise today. Whether you need a single replacement part or complete fleet maintenance, we have the inventory and technicians to keep your operations running.
+                  We began by manufacturing ribbon cassettes along with indigenous and high quality ribbon inks for dotmatrix printers. We still rely on that deep technical expertise today. Whether you need a single replacement part or complete fleet maintenance, we have the inventory and technicians to keep your operations running.
                 </ScrollReveal>
                 <ScrollReveal as="p" baseOpacity={0} blurStrength={5} enableBlur={true}>
-                  We do not just sell hardware. We make sure it keeps running. When a logistics label printer or back-office laser system goes down, work stops. That is why we stock premium OEM and tested compatible parts locally, so our technicians can fix hardware failures the same day.
+                  We do not just sell hardware, We make sure it keeps running. When a logistics label printer or back office laser system goes down, work stops. That is why we stock premium OEM and tested compatible parts locally, so our technicians can fix hardware failures immediately.
                 </ScrollReveal>
               </div>
 
@@ -97,10 +97,10 @@ export default async function AboutPage() {
               <div className="grid sm:grid-cols-3 gap-8 pt-16 mt-16 border-t border-brand-gray/20 divide-y sm:divide-y-0 sm:divide-x divide-brand-gray/30">
                 <div className="py-6 sm:py-0 sm:pr-8">
                   <span className="block text-5xl md:text-6xl font-bold text-brand-dark mb-2 font-outfit tracking-tighter">{settings.experienceYears}+</span>
-                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-dark-muted">Years Established</span>
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-dark-muted">Years of Esteemed Services</span>
                 </div>
                 <div className="py-6 sm:py-0 sm:px-8">
-                  <span className="block text-5xl md:text-6xl font-bold text-brand-dark mb-2 font-outfit tracking-tighter">B2B</span>
+                  <span className="block text-4xl md:text-5xl lg:text-6xl font-bold text-brand-dark mb-2 font-outfit tracking-tighter">B2B & B2C</span>
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-dark-muted">Enterprise Ready</span>
                 </div>
                 <div className="py-6 sm:py-0 sm:pl-8">

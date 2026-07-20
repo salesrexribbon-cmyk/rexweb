@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="sm:col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start text-center sm:text-left">
             <h3 className="text-3xl font-bold font-outfit text-brand-white-pure mb-4 tracking-tight">
-              Rex <span className="text-brand-green">International</span>
+              Rex <span>International</span>
             </h3>
             <p className="text-brand-gray-light/70 text-sm leading-relaxed mb-6 max-w-sm">
               {siteSettings.description}
@@ -50,7 +50,7 @@ export default function Footer() {
             <h4 className="font-bold text-brand-white-pure mb-6 uppercase tracking-widest text-sm">Services</h4>
             <ul className="space-y-4">
               <li><Link href="/services" className="text-brand-gray-light/70 hover:text-brand-white-pure transition-colors text-sm font-medium">OEM Part Procurement</Link></li>
-              <li><Link href="/services" className="text-brand-gray-light/70 hover:text-brand-white-pure transition-colors text-sm font-medium">B2B Bulk Supply</Link></li>
+              <li><Link href="/services" className="text-brand-gray-light/70 hover:text-brand-white-pure transition-colors text-sm font-medium">B2B & B2C Bulk Supply</Link></li>
               <li><Link href="/services" className="text-brand-gray-light/70 hover:text-brand-white-pure transition-colors text-sm font-medium">Component Repair</Link></li>
               <li><Link href="/services" className="text-brand-gray-light/70 hover:text-brand-white-pure transition-colors text-sm font-medium">Logistics Integration</Link></li>
             </ul>
