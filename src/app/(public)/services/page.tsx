@@ -101,6 +101,54 @@ export default async function ServicesPage() {
         </div>
       </section>
 
+      {/* ─── INFRASTRUCTURE GALLERY ──────────────────────────────────────────── */}
+      <section className="py-12 md:py-20 bg-brand-white-pure">
+        <div className="container-inner px-4">
+          <div className="mb-8 md:mb-12">
+            <TextType
+              as="h2"
+              className="text-2xl md:text-4xl font-bold font-outfit text-brand-dark"
+              text="Our Technical Infrastructure"
+              startOnVisible={true}
+              loop={false}
+            />
+            <p className="text-brand-dark-muted text-sm md:text-base mt-2 max-w-xl">Deep component-level diagnostics and direct OEM part availability.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            {/* Massive Disassembled Printer Image */}
+            <div className="md:col-span-8 rounded-2xl overflow-hidden border border-brand-gray/20 shadow-sm relative h-[300px] md:h-[500px]">
+              <img 
+                src="https://res.cloudinary.com/dl4ohcjuk/image/upload/q_auto,f_auto/v1784547834/mw1q0y9jqg7sjaljumhf.jpg" 
+                alt="Component-level printer diagnostics and repair" 
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            
+            {/* Stacked Images on Right */}
+            <div className="md:col-span-4 flex flex-col gap-4">
+              <div className="rounded-2xl overflow-hidden border border-brand-gray/20 shadow-sm relative flex-1 min-h-[200px]">
+                <img 
+                  src="https://res.cloudinary.com/dl4ohcjuk/image/upload/q_auto,f_auto/v1784547829/b166zrdryld6gtrfltjc.jpg" 
+                  alt="Legacy dotmatrix parts and assemblies" 
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-brand-gray/20 shadow-sm relative flex-1 min-h-[200px]">
+                <img 
+                  src="https://res.cloudinary.com/dl4ohcjuk/image/upload/q_auto,f_auto/v1784547828/omrmispf8osmbpyy7rbk.jpg" 
+                  alt="High volume OEM ink and toner cartridges" 
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ─── SERVICE CARDS ───────────────────────────────────────────────────── */}
       <section className="py-12 md:py-20 bg-brand-white">
         <div className="container-inner px-4">
