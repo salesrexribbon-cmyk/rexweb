@@ -37,7 +37,7 @@ export default function HeroOverlay() {
         className="mb-8"
       >
         <span className="inline-block text-brand-green text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em]">
-          The backbone for enterprise <DrawCircleText strokeWidth={2} animationDuration={1.5} color="#174D38">printing</DrawCircleText>
+          The backbone for enterprise <DrawCircleText strokeWidth={2} animationDuration={1.5} strokeColor="#174D38">printing</DrawCircleText>
         </span>
       </motion.div>
 
