@@ -8,14 +8,16 @@ function makeCirclePath(w: number, h: number) {
   const ry = h / 2;
   const cx = w / 2;
   const cy = h / 2;
+  
+  // Improved 2-segment hand-drawn ellipse 
   return `
-    M ${cx - rx * 0.1} ${cy - ry}
-    C ${cx + rx * 1.2} ${cy - ry * 1.3},
-      ${cx + rx * 1.3} ${cy + ry * 1.2},
-      ${cx} ${cy + ry * 1.05}
-    C ${cx - rx * 1.3} ${cy + ry * 1.2},
-      ${cx - rx * 1.3} ${cy - ry * 1.2},
-      ${cx - rx * 0.1} ${cy - ry}
+    M ${cx - rx * 0.05} ${cy - ry * 0.95}
+    C ${cx + rx * 1.35} ${cy - ry * 1.1},
+      ${cx + rx * 1.35} ${cy + ry * 1.1},
+      ${cx + rx * 0.05} ${cy + ry * 0.95}
+    C ${cx - rx * 1.35} ${cy + ry * 1.1},
+      ${cx - rx * 1.35} ${cy - ry * 1.1},
+      ${cx - rx * 0.05} ${cy - ry * 0.95}
   `.trim();
 }
 
@@ -47,10 +49,10 @@ export default function DrawCircleText({
     return () => ro.disconnect();
   }, [children]);
 
-  // Use a padding relative to the element height to closely match font scaling
-  // Reduced to hug the text tighter and prevent overlapping adjacent lines
-  const padX = dims.h * 0.25;
-  const padY = dims.h * 0.05;
+  // Generous padding to prevent the circle from cutting into the text,
+  // especially for long sentences or small font sizes.
+  const padX = dims.w * 0.02 + 16; 
+  const padY = dims.h * 0.15 + 8;
   const ovalW = dims.w + padX * 2;
   const ovalH = dims.h + padY * 2;
   const path = makeCirclePath(ovalW, ovalH);

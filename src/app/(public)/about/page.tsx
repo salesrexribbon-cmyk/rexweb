@@ -50,9 +50,21 @@ export default async function AboutPage() {
                 loop={false}
               />
               <div className="h-1 w-24 bg-brand-green mb-8"></div>
-              <p className="text-xl md:text-2xl text-brand-dark-muted leading-relaxed font-outfit font-light">
+              <p className="text-xl md:text-2xl text-brand-dark-muted leading-relaxed font-outfit font-light mb-8">
                 Engineering uptime for Mumbai's industrial sector since 1980.
               </p>
+              
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-brand-gray/30 group">
+                <img
+                  src="https://res.cloudinary.com/dl4ohcjuk/image/upload/f_auto/q_auto/v1784970762/vdlx8g5rgwnaqiafmbnn.png"
+                  alt="Hansraj Lalani - Founder of Rex International"
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/40 to-transparent p-6">
+                  <h3 className="text-white font-outfit text-xl font-bold">Hansraj Lalani</h3>
+                  <p className="text-brand-gray-light text-sm font-medium">Founder, Rex International (Est. 1980)</p>
+                </div>
+              </div>
             </div>
             
             <div className="md:col-span-7 pt-4 md:pt-0 pb-16">

@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import DrawCircleText from '@/components/ui/DrawCircleText';
 
 export default function HeroOverlay() {
   const containerVariants = {
@@ -11,7 +10,7 @@ export default function HeroOverlay() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.12,
         delayChildren: 0.1,
       }
     }
@@ -29,34 +28,38 @@ export default function HeroOverlay() {
       animate="visible"
       variants={containerVariants}
     >
-      {/* Anti-Slop: Plain text eyebrow */}
-      <motion.p
-        variants={itemVariants}
-        className="text-[11px] uppercase tracking-[0.2em] font-bold text-brand-green mb-6"
+      {/* Dynamic Island-style pill eyebrow */}
+      <motion.div
+        initial={{ opacity: 0, scaleX: 0.4, scaleY: 0.3 }}
+        animate={{ opacity: 1, scaleX: 1, scaleY: 1 }}
+        transition={{ duration: 0.6, ease: [0.34, 1.56, 0.64, 1], delay: 0.05 }}
+        className="mb-8"
       >
-        Rex International
-      </motion.p>
+        <span className="inline-flex items-center gap-2 bg-brand-dark text-brand-white-pure rounded-full px-5 py-2 text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em]">
+          <span className="w-1.5 h-1.5 rounded-full bg-brand-green flex-shrink-0 animate-pulse" />
+          The backbone for enterprise printing
+        </span>
+      </motion.div>
 
-      {/* Hand-drawn circle restored, tighter typography */}
+      {/* Main brand name — large, editorial */}
       <motion.h1
         variants={itemVariants}
-        className="text-4xl sm:text-5xl lg:text-8xl font-bold tracking-tighter leading-[1.05] mb-6 font-outfit text-brand-green"
+        className="text-6xl sm:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.92] mb-6 font-outfit text-brand-dark"
       >
-        The backbone for <br className="hidden sm:block" />
-        <span className="text-brand-dark">
-          enterprise <DrawCircleText strokeWidth={4} animationDuration={1.5}>printing.</DrawCircleText>
-        </span>
+        <span className="text-brand-green">Rex</span>
+        <br className="hidden sm:block" />
+        International.
       </motion.h1>
 
       {/* Concise Subtext */}
       <motion.p
         variants={itemVariants}
-        className="text-base sm:text-lg lg:text-2xl mb-12 leading-relaxed text-brand-dark-muted max-w-3xl mx-auto"
+        className="text-base sm:text-lg lg:text-xl mb-12 leading-relaxed text-brand-dark-muted max-w-2xl mx-auto"
       >
         Trusted dotmatrix, laser, and ink tank systems. Reliable AMC contracts and consumables for Mumbai since 1980.
       </motion.p>
 
-      {/* Anti-Slop: 1 Primary CTA + 1 Secondary Text CTA */}
+      {/* CTAs */}
       <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto">
         <Link
           href="/store"
@@ -69,7 +72,7 @@ export default function HeroOverlay() {
           href="/services"
           className="text-base font-semibold transition-colors text-brand-green hover:text-brand-green-light group inline-flex items-center justify-center gap-1 w-full sm:w-auto"
         >
-          Technical services 
+          Technical services
           <span className="transition-transform group-hover:translate-x-1">→</span>
         </Link>
       </motion.div>
