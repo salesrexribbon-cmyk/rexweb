@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import DrawCircleText from '@/components/ui/DrawCircleText';
 
 export default function HeroOverlay() {
   const containerVariants = {
@@ -35,19 +36,18 @@ export default function HeroOverlay() {
         transition={{ duration: 0.6, ease: [0.34, 1.56, 0.64, 1], delay: 0.05 }}
         className="mb-8"
       >
-        <span className="inline-flex items-center gap-2 bg-brand-dark text-brand-white-pure rounded-full px-5 py-2 text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em]">
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-green flex-shrink-0 animate-pulse" />
-          The backbone for enterprise printing
+        <span className="inline-block text-brand-green text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em]">
+          The backbone for enterprise <DrawCircleText strokeWidth={2} animationDuration={1.5} color="#174D38">printing</DrawCircleText>
         </span>
       </motion.div>
 
       {/* Main brand name — large, editorial */}
       <motion.h1
         variants={itemVariants}
-        className="text-6xl sm:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.92] mb-6 font-outfit text-brand-dark"
+        className="text-[14vw] sm:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.92] mb-6 font-outfit text-brand-dark overflow-hidden break-words"
       >
         <span className="text-brand-green">Rex</span>
-        <br className="hidden sm:block" />
+        <br />
         International.
       </motion.h1>
 
