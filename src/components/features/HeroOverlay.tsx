@@ -44,7 +44,7 @@ export default function HeroOverlay() {
       {/* Main brand name — large, editorial */}
       <motion.h1
         variants={itemVariants}
-        className="text-[14vw] sm:text-7xl lg:text-[9rem] font-bold tracking-tighter leading-[0.92] mb-6 font-outfit text-brand-dark overflow-hidden break-words"
+        className="text-[14vw] sm:text-[clamp(4.5rem,10vw,9rem)] font-bold tracking-tighter leading-none mb-6 font-outfit text-brand-dark break-words"
       >
         <span className="text-brand-green">Rex</span>
         <br />

@@ -12,7 +12,6 @@ const HERO_FADE_FRAMES = 12;   // frames over which the hero overlay fades in
 // with the hero before the sticky container unpins. This is viewport-height
 // worth of breathing room — we read the actual value after mount.
 const EXTRA_RUNWAY_VH = 3.0;   // multiples of window.innerHeight — large enough to give reading time
-const SCROLL_LOCK_DURATION = 1800; // ms to lock scroll when hero content becomes visible
 
 type AnimationConfig = {
   folder: string;
@@ -65,11 +64,6 @@ export default function ScrollytellHero({ children }: ScrollytellHeroProps) {
   const [allLoaded,    setAllLoaded]    = useState(false);
   const [heroOpacity,  setHeroOpacity]  = useState(0);
   const [scrollPromptOpacity, setScrollPromptOpacity] = useState(1);
-
-  // Scroll lock state — triggered once when hero fully fades in
-  const scrollLockRef    = useRef(false);  // true while locked
-  const hasLockedRef     = useRef(false);  // so we only lock once
-  const lockScrollPosRef = useRef(0);      // scroll position to hold at
 
   // 1. Detect environment on mount to prevent hydration mismatch and double-loading
   useEffect(() => {
@@ -126,16 +120,6 @@ export default function ScrollytellHero({ children }: ScrollytellHeroProps) {
     const opacity   = Math.max(0, Math.min(1, (clamped - fadeStart) / HERO_FADE_FRAMES));
     setHeroOpacity(opacity);
 
-    // Trigger scroll lock exactly once when overlay is fully visible
-    if (opacity >= 1 && !hasLockedRef.current) {
-      hasLockedRef.current  = true;
-      scrollLockRef.current = true;
-      lockScrollPosRef.current = window.scrollY;
-      setTimeout(() => {
-        scrollLockRef.current = false;
-      }, SCROLL_LOCK_DURATION);
-    }
-
     rafRef.current = requestAnimationFrame(renderLoop);
   };
 
@@ -160,12 +144,6 @@ export default function ScrollytellHero({ children }: ScrollytellHeroProps) {
   const handleScroll = () => {
     const container = containerRef.current;
     if (!container || !config) return;
-
-    // If we're currently in a scroll-lock, snap back to the locked position
-    if (scrollLockRef.current) {
-      window.scrollTo({ top: lockScrollPosRef.current, behavior: 'instant' });
-      return;
-    }
 
     // scrolled = how far the user has scrolled INTO this container
     const scrolled = window.scrollY - container.offsetTop;
@@ -253,7 +231,13 @@ export default function ScrollytellHero({ children }: ScrollytellHeroProps) {
         <canvas
           ref={canvasRef}
           className="absolute inset-0"
-          style={{ display: 'block', width: '100%', height: '100%' }}
+          style={{ 
+            display: 'block', 
+            width: '100%', 
+            height: '100%',
+            transform: 'translateZ(0)',
+            willChange: 'transform'
+          }}
           aria-hidden="true"
         />
 
