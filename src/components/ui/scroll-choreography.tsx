@@ -49,11 +49,11 @@ export function ScrollChoreography({
   // Responsive positions relative to center
   const xLeft = isMobile ? "-20vw" : "-24vw";
   const xRight = isMobile ? "20vw" : "24vw";
-  const yTop = isMobile ? "-14vh" : "-21vh";
-  const yBottom = isMobile ? "14vh" : "21vh";
+  const yTop = isMobile ? "-14vh" : "-16vh";
+  const yBottom = isMobile ? "14vh" : "16vh";
 
-  const imgWidth = isMobile ? "36vw" : "46vw";
-  const imgHeight = isMobile ? "24vh" : "40vh";
+  const imgWidth = isMobile ? "36vw" : "38vw";
+  const imgHeight = isMobile ? "24vh" : "28vh";
 
   // Phase 1: 0 - 0.3 (Diagonal movement)
   // Phase 2: 0.35 - 0.65 (Stack alignment to center)
@@ -72,15 +72,22 @@ export function ScrollChoreography({
   const blY = useTransform(smoothProgress, [0, 0.3, 0.35, 0.65, 1], [yBottom, yBottom, yBottom, "0vh", "0vh"]);
 
   // Top Right -> stays, then moves to Center, then expands
-  const trX = useTransform(smoothProgress, [0, 0.3, 0.35, 0.65, 1], [xRight, xRight, xRight, "0vw", "0vw"]);
-  const trY = useTransform(smoothProgress, [0, 0.3, 0.35, 0.65, 1], [yTop, yTop, yTop, "0vh", "0vh"]);
+  // (trX and trY removed as Hero image now uses clipPath for movement and expansion)
 
-  // Top Right (Hero) scaling/expansion properties
-  const heroWidth = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], [imgWidth, imgWidth, "100vw", "100vw"]);
-  const heroHeight = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], [imgHeight, imgHeight, "100vh", "100vh"]);
-  
-  // Also adjust borderRadius so it becomes 0 when full screen
-  const heroRadius = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], ["0.5rem", "0.5rem", "0rem", "0rem"]);
+  // Top Right (Hero) clip-path expansion properties (GPU Accelerated)
+  const clipStart = isMobile 
+    ? "inset(26vh 12vw 50vh 52vw round 0.5rem)" 
+    : "inset(22vh 7vw 50vh 55vw round 0.5rem)";
+  const clipCenter = isMobile
+    ? "inset(38vh 32vw 38vh 32vw round 0.5rem)"
+    : "inset(36vh 31vw 36vh 31vw round 0.5rem)";
+  const clipFull = "inset(0vh 0vw 0vh 0vw round 0rem)";
+
+  const heroClipPath = useTransform(
+    smoothProgress, 
+    [0, 0.3, 0.35, 0.65, 0.7, 0.9, 1], 
+    [clipStart, clipStart, clipStart, clipCenter, clipCenter, clipFull, clipFull]
+  );
 
   // Opacity fading for images underneath the hero as it expands
   const underImagesOpacity = useTransform(smoothProgress, [0.75, 0.85], [1, 0]);
@@ -90,7 +97,7 @@ export function ScrollChoreography({
   const textOpacity = useTransform(smoothProgress, [0.1, 0.3, 0.65, 0.75], [0, 1, 1, 0]);
 
   const baseImageClasses =
-    "absolute left-1/2 top-1/2 overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-muted shadow-2xl will-change-transform rounded-lg";
+    "absolute left-1/2 top-1/2 overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-muted will-change-transform rounded-lg shadow-md";
     
   const textClasses = "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center p-6 text-center will-change-transform";
 
@@ -156,13 +163,11 @@ export function ScrollChoreography({
           {/* Top Right Image (Hero - expands at the end) */}
           <motion.div
             style={{
-              x: trX,
-              y: trY,
-              width: heroWidth,
-              height: heroHeight,
-              borderRadius: heroRadius
+              clipPath: heroClipPath,
+              width: "100vw",
+              height: "100vh",
             }}
-            className={cn(baseImageClasses, "z-40 origin-center bg-black/5 rounded-none")}
+            className={cn(baseImageClasses, "z-40 origin-center bg-black/5 !rounded-none !shadow-none")}
           >
             <img 
               src={images.topRight} 
